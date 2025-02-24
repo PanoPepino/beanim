@@ -61,3 +61,9 @@ from beanim import *
     - Fix issue with sphinxcontrib.video, so that videos can be deploy in sphinx.
         - Add videos for each big class, specifying the commands.
     - Think how to add miniature slides as Manimslides webpage.
+
+- Changes to make the Github deploy more professional:
+
+    - Add tests for each of the modules in the package
+    - Make the precommit work, as it currently does not detect manim nor beanim and everything is a whole error.
+    
