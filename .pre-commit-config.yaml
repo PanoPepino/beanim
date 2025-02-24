@@ -19,3 +19,11 @@ repos:
   - id: ruff
     args: [--fix]
   - id: ruff-format
+- repo: local
+  hooks:
+    - id: your-custom-hook
+      name: Your Custom Hook
+      entry: your-script
+      language: python
+      additional_dependencies: ['beanim']
+

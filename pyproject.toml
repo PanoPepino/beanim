@@ -31,9 +31,6 @@ docs = [
   "furo>= 2024.8.6",
   "sphinx>= 7.4.7",
 ]
-tests = [
-  "pytest>= 8.3.4",
-]
 
 [project.urls]
 Documentation = "https://panopepino.github.io/beanim/"
@@ -49,10 +46,10 @@ extend-select = [
   "I",  # Isort
   "TID",  # https://docs.astral.sh/ruff/rules/relative-imports/
 ]
-isort = {known-first-party = ["beanim", "tests"]}
+isort = {known-first-party = ["beanim"]}
 
 [tool.uv]
 dev-dependencies = [
-  "beanim[docs,tests]",
+  "beanim[docs]",
   "pre-commit>=3.5.0",
 ]
