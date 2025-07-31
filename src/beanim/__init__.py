@@ -1,13 +1,15 @@
+"""Beanim package: tools for building beamer like slides with Manim."""
+
 from .figures import *
-from .objects import *
-from .tables_and_plots import *
-from .templates import *
+from .other_objects import *
+from .graphing_objects import *
 from .text_and_organisation import *
+from .templates import *
 from .tools import *
 
 __all__ = []
 __all__ += text_and_organisation.__all__
-__all__ += objects.__all__
-__all__ += tables_and_plots.__all__
+__all__ += other_objects.__all__
+__all__ += graphing_objects.__all__
 __all__ += templates.__all__
 __all__ += tools.__all__

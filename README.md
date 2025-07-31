@@ -1,18 +1,22 @@
-## ABOUT BEANIM
-- This repository contains v1.0 of beanim (Beamer + Manim) libraries. It is an improved version of the old mtheoretical, with more straightforward commands and a better folder and files organisation, with more optional parameters and the cleanest documentation I am able to achieve.
+## About Beanim
+---------------------------------------------------------------------
+- This repository contains v2.0 of beanim (Beamer + Manim) libraries. 
+- This package aims to offer a similar experience to that of beamer in latex, by offering similar properties in Manim + ManimSlides to the slides created by Beamer.
+- While the package is currently quite limited, the idea would be to improve and expand by collaboration with other interested people.
+-----------------------------------------------------------------------
 
-- These libraries are supposed to be used with [manim-slides](https://manim-slides.eertmans.be/latest/) and [manim](https://www.manim.community).
+## Examples
 
-- The main idea of this package is to offer a beamer-like experience, with more freedom, less annoying commands and possibility to loop animations.
+Here you can find an overview of the current templates and how almost all objects look like in each template. New templates will be added in the incoming versions.
 
-- These files contain a set of tools:
-    - To extract equations and references from .tex and .bib files.
-    - To organise your slides with Titles, bulleted lists, general equations, etc in a similar fashion than beamer one.
-    - My personal animations to generate slides to present my scientific research.
+| ![](docs/source/media/images/TST_dt.png) | ![](docs/source/media/images/TST_fm.png) | ![](docs/source/media/images/TST_fa.png) | ![](docs/source/media/images/TST_ba.png) |
+|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
+| Title Slide default template            | Title Slide fancy_mint template          | Title Slide fire_autumn template            | Title Slide blue_ice template            |
 
-You can find examples of the overall results [here](https://panopepino.github.io/web_page/main_page/slides.html).
+| ![](docs/source/media/images/GST_dt.png) | ![](docs/source/media/images/GST_fm.png) | ![](docs/source/media/images/GST_fa.png) | ![](docs/source/media/images/GST_ba.png) |
+|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
+| Generic Slide default template            | Generic Slide fancy_mint template          | Generic Slide fire_autumn template            | Generic Slide blue_ice template            |
 
-- The [documentation webpage](https://panopepino.github.io/beanim/) includes information about the characteristics and examples of each of the classes and their methods included in these libraries. The main reason of its existence is to easily access all objects of these libraries when crafting slides.
 
 -----------------------------------------------------------------------
 
@@ -39,31 +43,19 @@ from beanim import *
 
 ## TO DO
 
-- Include old animations:
-    - Diagrams (gravity and EM)
-    - Pulling strings and bending branes.
+(Collaboration is welcomed!!)
 
-- Code new animations:
-    - (Non)-Normalisable modes and the bubble expanding.
-    - Smooth transition between global and Poincaré coordinates for the bubble.
-    - Method in title_section to display title at center, shrink and place UR.
+- Fix and update Sphinx documentation webpage []
+- Fix issue with extract_refs (Family name of researchers appear between '' symbols)
+- To create Plot_General (Modify so that it behaves like Eq_General, i.e. data_base, dictionary or manual input) []
+    - Inputs should be axis labels, length and plots. []
+    - Possible methods: 
+        - FadeIn axis []
+        - Draw plot with iterator []
+- To create underbar with information like title, remaining slides and similar stuff.
+- If possible, make the equation number of the paper the key of the dictionary for Equation. []
+- More templates. Always more templates.
+- Extra features to Title_Section and similar (underbar, different color for first Capital letter, etc.)
+- Extra animation methods (Sliding Title_Section + delayed background, etc..)
+- 
 
-- General Python code to write:
-    - Rewrite code to extract all the equations of a .tex file in the form of a dictionary {eq_label: 'equation'}, but taking into account
-    things like \begin{split}, \begin{aligned} and so on. At the moment it only works with regular \begin{equation} enviroment.
-    - Think how to choose among equations in the package and equations from outside.
-    - Two more templates
-    - Allow choosing upper title for bulleted lists.
-
-- Changes to make for webpage deploy:
-
-    - Add required configuration in the conf.py file to automatically remove Submodule headings, Module contents at the end of the page, and any name displayed as pkg.sub_pkg.module.
-    - Fix issue with sphinxcontrib.video, so that videos can be deploy in sphinx.
-        - Add videos for each big class, specifying the commands.
-    - Think how to add miniature slides as Manimslides webpage.
-
-- Changes to make the Github deploy more professional:
-
-    - Add tests for each of the modules in the package
-    - Make the precommit work, as it currently does not detect manim nor beanim and everything is a whole error.
-    

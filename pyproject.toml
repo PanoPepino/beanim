@@ -18,7 +18,7 @@ dependencies = [
   "numpy>=2.0.2",
   "pybtex>=0.23.0",
 ]
-description = "Set of libraries to obtain a similar beamer-like experience while using manim and manim-slides"
+description = "Package to obtain a similar beamer-like experience while using manim and manim-slides"
 dynamic = ["readme", "version"]
 keywords = ["manim", "slides", "presentations", "beamer"]
 license = "MIT"
@@ -33,8 +33,8 @@ docs = [
 ]
 
 [project.urls]
-Documentation = "https://panopepino.github.io/beanim/"
-Repository = "https://github.com/PanoPepino/beanim"
+Documentation = "Not yet"
+Repository = "Not yet"
 
 [tool.hatch.version]
 path = "src/beanim/__version__.py"

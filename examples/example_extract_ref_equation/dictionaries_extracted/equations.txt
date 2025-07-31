@@ -1,0 +1,6 @@
+{
+'equation_extract_1': 'x= 4y + \\Lambda - \\frac{2}{\\beta}',
+'equation_extract_2': 'x= 20+ z - \\frac{\\epsilon}{\\frac{3}{\\gamma}}',
+'equation_extract_3': 'v= 6y + \\Lambda\\Gamma - \\frac{2}{\\beta}',
+'equation_extract_4': 'x+ z= 20\\int{d^{D}x}\\sqrt{-g_{\\mu\\nu} \\Phi + \\Omega}+ y - \\frac{\\epsilon\\phi}{\\frac{3}{\\gamma}}',
+}

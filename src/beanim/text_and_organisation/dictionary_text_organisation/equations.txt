@@ -1,0 +1,6 @@
+{
+            'equation_data_base_1': '\\mathcal{S}= \\frac{1}{2 \\kappa_{5}} \\int d^{5} x \\sqrt{|g|}\\left(R^{(5)}-2 \\Lambda_{5}\\right) - \\sigma \\int d^{4} \\zeta \\sqrt{|\\eta|} + \\frac{1}{\\kappa_{5}} \\oint d^{4} x \\sqrt{|h|} K',
+            'equation_data_base_2': '\\mathcal{H} \\psi_{5D}= \\left(\\left(-\\frac{1}{24 \\pi^{2}}\\frac{1}{a^{3 / 2}} \\frac{d^{2}}{d a^{2}}\\right)+6 \\pi^{2} V(a)\\right) {{a^{3 / 2} \\psi_{5D}}}= 0',
+            'equation_data_base_3': 'S_{D 3}= -T_3 \\int d^4 \\xi \\sqrt{- det P[G]} + T_3 \\int P\\left[C_4\\right]',
+            'equation_data_base_4': 'G_{\\mu,\\nu} = T_{\\mu\\nu}'
+         }

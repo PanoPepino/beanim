@@ -6,23 +6,59 @@ __all__ = ["extract_equations"]
 
 
 def extract_equations(tex_file, output_file):
-    """Extract labeled equations from .tex file and save as {'label': 'equation'} dictionary
+    """
+    Extract labeled equations from a LaTeX file and save as a dictionary.
 
-    Args::
+    This function parses a ``.tex`` file to find all labeled equations within
+    ``\\begin{equation}...\\end{equation}`` environments and creates a dictionary
+    mapping labels to equation content. The result is saved as a ``.txt`` file
+    containing a Python dictionary format.
 
-        - tex_file (str): Path to input .tex file
-        - output_file (str): Path for output .txt file
+    :param tex_file: Path to the input LaTeX file to process.
+    :type tex_file: str
 
-    Returns::
+    :param output_file: Path where the output dictionary file will be saved.
+    :type output_file: str
 
-        A .txt file with a colllection of equations in the form a dictionary. Labels are the keys.
+    :return: Creates a ``.txt`` file containing a dictionary with equation labels as keys
+        and cleaned equation content as values.
+    :rtype: None
 
-    - **Example**::
+    :raises FileNotFoundError: If the input LaTeX file cannot be found.
+    :raises IOError: If the output file cannot be written.
 
-        from beanim import *
-        extract_equation('path/to/file', 'output_file_name')
+    .. note::
 
+       - This function currently uses equation labels as dictionary keys, not equation numbers.
+       - Equations containing ``align`` environments are automatically filtered out.
+       - Commas and single backslashes are cleaned from equations for better slide display.
 
+    .. warning::
+
+       This function could be improved to reference equations by their displayed numbers
+       in the paper rather than labels, but this requires further development.
+
+    **Example usage:**
+
+    .. code-block:: python
+
+        from beanim import extract_equations
+
+        extract_equations(
+            tex_file="example_extract_ref_equation/latex_to_extract/latex_example.tex",
+            output_file="example_extract_ref_equation/dictionaries_extracted/equations.txt"
+        )
+
+    **Output format:**
+
+    The generated ``.txt`` file will contain a dictionary like:
+
+    .. code-block:: python
+
+        {
+        'eq_label_1': 'E = mc^2',
+        'eq_label_2': 'F = ma',
+        }
     """
     with open(tex_file, "r", encoding="utf-8") as f:
         content = f.read()
@@ -41,6 +77,7 @@ def extract_equations(tex_file, output_file):
 
         # Extract labels
         labels = re.findall(r"\\label{([^}]+)}", eq_content)
+
         if not labels:
             continue
 
@@ -50,12 +87,18 @@ def extract_equations(tex_file, output_file):
 
         equation_dict[labels[0]] = cleaned
 
+    print(
+        "---------------------------------------------------\n"
+        "YOUR DICTIONARY OF EQUATIONS IS:\n"
+        "---------------------------------------------------\n"
+    )
+
     # Save to text file
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("{\n")
         for label, eq in equation_dict.items():
+            print(label + ": " + eq)
             # Majority of eqs. in papers end with stop or colon; In this way we get rid of them to display in slides.
             eq = eq.replace(",", "").replace("\\", "\\\\")
-
             f.write("'" + label + "'" + ": " + "'" + eq + "'" + ",\n")
         f.write("}\n")

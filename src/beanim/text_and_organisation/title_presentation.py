@@ -1,104 +1,58 @@
 from ..my_imports import *
-from .title_general import *
+from .text_general import *
 
 __all__ = ["Title_Presentation"]
 
 
-class Title_Presentation(Title_General, VGroup):
-    """Class to generate titles for presentations. Generates a group with the title and a background decorator.
+class Title_Presentation(Text_General, VGroup):
+    """
+    Generate presentation title slides with hierarchical text styling.
 
-    - **Parameters**::
+    This class creates a title group containing the presentation title, affiliation,
+    and author information, each styled with decreasing font sizes to create a
+    visual hierarchy. An optional background decorator can be applied.
 
-            - title ("str"): Title of your talk.
-            - affiliation ("str"): Your university or institution.
-            - author ("str"): Who has crafted the slides.
+    :param content: A list containing presentation information in order:
+        1. The presentation title
+        2. Institution/affiliation
+        3. Author name(s)
+    :type content: list[str]
 
-    - An **Example** of this is::
+    :param kwargs: Additional parameters passed to :class:`Text_General`.
 
-        from manim  import *
+    .. note::
+
+       The title text automatically scales to fit the frame width with appropriate margins.
+       Font sizes decrease progressively: title (2x), affiliation (1.5x), author (1x).
+
+    **Example usage:**
+
+    .. code-block:: python
+
+        from manim import *
         from beanim import *
 
-        class Title_Slide(Scene):
+        class Title_Slide_Test(Scene):
             def construct(self):
-                self.add(Title_Presentation(title= "An Useless Title to Show",
-                                            affiliation= "Your Mama University",
-                                            author= "A Dashing Monkey"))
+                tp = Title_Presentation(
+                    content=[
+                        "This is a Title Presentation",
+                        "Your institution",
+                        "Your name"
+                    ]
+                )
+                self.add(tp)
 
+    :seealso: :class:`Text_General`
     """
 
-    def __init__(self, title, affiliation, author, **kwargs) -> VGroup:
+    def __init__(self, **kwargs) -> VGroup:
         super().__init__(**kwargs)
 
-        # text
-        tit = Tex(title, font_size=2 * self.text_size, color=self.text_color)
-        nam = Tex(author, font_size=1.5 * self.text_size, color=self.text_color)
-        uni = Tex(affiliation, font_size=self.text_size, color=self.text_color)
-        self.text_group = VGroup(tit, nam, uni).arrange(DOWN, buff=0.4)
+        self.text_group = VGroup(*[
+            Tex(self.content[i], font_size=(2-0.5*i) * self.text_size, color=self.text_color)
+            for i in range(len(self.content))
+        ]).arrange(DOWN, buff=0.4)
+
         self.text_group.scale_to_fit_width(config.frame_width - 3)
-
-        if self.decorator_presence == "box":
-            self.box = SurroundingRectangle(
-                self.text_group,
-                corner_radius=self.corner_rad,
-                buff=self.tightness,
-                stroke_width=self.decorator_stroke_width,
-                color=self.decorator_color,
-                fill_opacity=self.fill_opa,
-                stroke_opacity=self.stroke_opa,
-            )
-            self.add(self.text_group, self.box)
-
-        if self.decorator_presence == "box_long_right":
-            self.box_long = RoundedRectangle(
-                height=self.text_group.get_height() + self.tightness,
-                width=self.text_group.get_width() + 5,
-                stroke_width=self.decorator_stroke_width,
-                color=self.decorator_color,
-                fill_opacity=self.fill_opa,
-                corner_radius=self.corner_rad,
-                stroke_opacity=self.stroke_opa,
-            )
-            self.box_long.next_to(
-                self.text_group.get_left(),
-                RIGHT,
-                aligned_edge=LEFT,
-                buff=-self.tightness,
-            )
-            self.text_group.move_to([0, 0, 0])
-            t_sec = VGroup(self.text_group, self.box_long)
-            self.add(t_sec)
-
-        if self.decorator_presence == "box_long_left":
-            self.box_long = RoundedRectangle(
-                height=self.text_group.get_height() + self.tightness,
-                width=self.text_group.get_width() + 5,
-                stroke_width=self.decorator_stroke_width,
-                color=self.decorator_color,
-                fill_opacity=self.fill_opa,
-                corner_radius=self.corner_rad,
-                stroke_opacity=self.stroke_opa,
-            )
-            self.box_long.flip()
-            self.box_long.next_to(
-                self.text_group.get_right(),
-                LEFT,
-                aligned_edge=RIGHT,
-                buff=-self.tightness,
-            )
-            self.text_group.move_to([0, 0, 0])
-            t_sec = VGroup(self.text_group, self.box_long)
-            self.add(t_sec)
-
-        if self.decorator_presence == "back_frame":
-            self.rectangle = Rectangle(
-                height=self.text_group.get_height() + self.tightness,
-                width=config.frame_width + 0.1,
-                stroke_width=self.decorator_stroke_width,
-                color=self.decorator_color,
-                fill_opacity=self.fill_opa,
-                stroke_opacity=self.stroke_opa,
-            )
-            self.add(self.text_group, self.rectangle)
-
-        else:
-            self.add(self.text_group)
+        self.add_decorator(self.text_group)

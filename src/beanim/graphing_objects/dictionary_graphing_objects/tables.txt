@@ -1,0 +1,5 @@
+{
+    'table_data_base_1' : [["\\alpha", "\\beta", "\\delta", "\\gamma"], ["\\int \partial_{x}\\,\\Gamma", "\\nu", "\\mu", "\\omega"]],
+    'table_data_base_2' : [["\\Sigma", "\\Xi"], ["\\Theta", "\\Phi"], ["\\partial_{x}\\, f(x)", "3"]],
+    'table_data_base_3' : [["A", "B", "C", "D", "E", "F"]]
+}

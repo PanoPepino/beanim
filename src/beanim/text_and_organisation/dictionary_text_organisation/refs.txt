@@ -1,0 +1,6 @@
+{
+'ref_data_base_1': '[Gauss, Leibniz, Newton, arXiv \\#1]', 
+'ref_data_base_2': '[Edison, Maxwell, Tesla, arXiv \\#2]', 
+'ref_data_base_3': '[Noether, Sawn Leavitt, arXiv \\#3]', 
+'ref_data_base_4': '[Vafa, Witten, arXiv \\#4]', 
+}

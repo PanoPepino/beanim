@@ -1,7 +1,0 @@
-{
-
-'action D3 corrections': 'S[g_{\\mu \\nu}, C_{4}]= \\text{DBI}^{(0)} + \\alpha \\prime {}^{2} \\text{DBI}^{(2)} + \\text{WZ}^{(0)} + \\alpha \\prime {}^{2} \\text{WZ}^{(2)}',
-'correction to D3': '\\sigma \sim T_{D3} \\left(1 - \\frac{1}{g_{s} N}\\right)',
-'new lambda': 'N= \\sqrt{\\frac{3 \\pi}{G_{4}^{2} g_{s} \\rho_{\\Lambda}}'
-
-}

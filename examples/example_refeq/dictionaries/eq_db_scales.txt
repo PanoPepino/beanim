@@ -1,9 +1,0 @@
-{
-
-            'hierarchy expected': 'L > \\ell_{10} > \\ell_{5} > \\ell_{4}',
-            'hierarchy dark bubble': 'L > \\ell_{10} > \\ell_{4} > \\ell_{5}',
-            'hierarchy with N': 'N^{1/2}\\ell_{4} > N^{1/4}\\ell_{4} > \\ell_{4} > N^{-1/6} \\ell_{4}',
-            'hierarchy numeric size': '10^{-5} m > 10^{-20} m > 10^{-35} m > 10^{-45} m',
-            'hierarchy energy value': '3.8 \\, meV < 13.7 \\, TeV < 1.22 \\times 10^{19} \\, GeV  < 5.1 \\times 10^{28}  \\, GeV',
-            'tension correction': '\\sigma \sim T_{D_{3}}\\left(1- \\frac{1}{g_{s} N}\\right)'
-        }

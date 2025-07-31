@@ -1,6 +1,0 @@
-{
-'my_eq': 'x= 4y + \\Lambda - \\frac{2}{\\beta}',
-'my_other_eq': 'x= 20+ z - \\frac{\\epsilon}{\\frac{3}{\\gamma}}',
-'my_eq_2': 'v= 6y + \\Lambda\\Gamma - \\frac{2}{\\beta}',
-'my_other_eq_2': 'x+ z= 20\\int{d^{D}x}\\sqrt{-g_{\\mu\\nu} \\Phi + \\Omega}+ y - \\frac{\\epsilon\\phi}{\\frac{3}{\\gamma}}',
-}

@@ -1,6 +1,0 @@
-{
-
-            'gc initial': '\\mathcal{J}_{a b}= R_{\\alpha \\beta \\gamma \\delta}^{(5)} e_c^\\alpha e_a^\\beta e_d^\\gamma e_b^\\delta h^{c d}=R_{a b}^{(4)}+\\left(K_{a c} K_b^c-K_c^c K_{a b}\\right)',
-            'gc reversed': 'G_{ab}^{(4)}=\left(\\frac{k_{+} k_{-}}{k_{-}-k_{+}}\\right)\\left[\\left(\\frac{\\mathcal{J}_{ab}^{+}}{k_{+}}-\\frac{\\mathcal{J}_{ab}^{-}}{k_{-}}\\right)-\\frac{1}{2} h_{ab}\\left(\\frac{\\mathcal{J}^{+}}{k_{+}}-\\frac{\\mathcal{J}^{-}}{k_{-}}\\right)-3\\left(k_{-}-k_{+}\\right) h_{ab}-2 \\kappa_{5} S_{ab}\\right]',
-            'einstein 4d': ' R_{a b}^{(4)} - \\tfrac{1}{2} R^{(4)} h_{ab} + \\Lambda_{4} h_{ab}= T_{ab}^{\\rm extrinsic} - T_{ab}^{\\rm brane}= T^{\\rm effective}_{ab}'
-         }

@@ -1,5 +1,0 @@
-{
-
-            'action em' : 'S_{5}[H, \\mathcal{F}] \sim \int d^{5}x \\sqrt{g_{5}} \\: \\left(R - H^{2}\\right) - T_{D3} \int d^{5}x \\: \\delta \\left(r - a(\\eta)\\right) \\:\\sqrt{g_{4} + \\mathcal{F}}',
-            'EOM': '\\partial_r H^{r\\mu \\nu}= \\frac{2 \\kappa_{5} \\:kr}{\\alpha\\prime \\: \\pi^{2} } \\:{\\mathcal{F}}^{\\mu \\nu} \\:\\delta \\left(r-a(\\eta)\\right)'
-         }

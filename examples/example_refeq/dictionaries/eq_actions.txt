@@ -1,6 +1,0 @@
-{
-            'bubble action 5d': '\\mathcal{S}= \\frac{1}{2 \\kappa_{5}} \\int d^{5} x \\sqrt{|g|}\\left(R^{(5)}-2 \\Lambda_{5}\\right) - \\sigma \\int d^{4} \\zeta \\sqrt{|\\eta|} + \\frac{1}{\\kappa_{5}} \\oint d^{4} x \\sqrt{|h|} K',
-            'hamil quantum 5d': '\\mathcal{H} \\psi_{5D}= \\left(\\left(-\\frac{1}{24 \\pi^{2}}\\frac{1}{a^{3 / 2}} \\frac{d^{2}}{d a^{2}}\\right)+6 \\pi^{2} V(a)\\right) {{a^{3 / 2} \\psi_{5D}}}= 0',
-            'dbi action': 'S_{D 3}= -T_3 \\int d^4 \\xi \\sqrt{- det P[G]} + T_3 \\int P\\left[C_4\\right]',
-            'hamil from dbi': '\\mathcal{H}= 2 \\pi^2 T_3\\left(\\sqrt{-g_{tt}\\left(\\mathcal{Z}^6+\\frac{J_C^2}{L^2}\\right)} \\sqrt{1+g_{zz} \\dot{\\mathcal{Z}}^2}-\\left(C_4\\right)_{t}-\\frac{A_t}{L} J_c \\right)'
-         }
