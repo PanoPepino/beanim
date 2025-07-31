@@ -10,11 +10,11 @@
 Here you can find an overview of the current templates and how almost all objects look like in each template (You can find the code in examples/example_generic.py file). 
 New templates will be added in the incoming versions.
 
-| ![_](docs/source/media/images/TST_dt.png) | ![_](docs/source/media/images/TST_fm.png) | ![_](docs/source/media/images/TST_fa.png) | ![_](docs/source/media/images/TST_ba.png) |
+| ![](docs/source/media/images/TST_dt.png) | ![](docs/source/media/images/TST_fm.png) | ![](docs/source/media/images/TST_fa.png) | ![](docs/source/media/images/TST_ba.png) |
 |:--------------------:|:--------------------:|:--------------------:|:--------------------:|
 | Title Slide default template            | Title Slide fancy_mint template          | Title Slide fire_autumn template            | Title Slide blue_ice template            |
 
-| ![_](docs/source/media/images/GST_dt.png) | ![_](docs/source/media/images/GST_fm.png) | ![_](docs/source/media/images/GST_fa.png) | ![_](docs/source/media/images/GST_ba.png) |
+| ![](docs/source/media/images/GST_dt.png) | ![](docs/source/media/images/GST_fm.png) | ![](docs/source/media/images/GST_fa.png) | ![](docs/source/media/images/GST_ba.png) |
 |:--------------------:|:--------------------:|:--------------------:|:--------------------:|
 | Generic Slide default template            | Generic Slide fancy_mint template          | Generic Slide fire_autumn template            | Generic Slide blue_ice template            |
 
@@ -47,15 +47,15 @@ from beanim import *
 (Collaboration is welcomed!!)
 
 - Fix and update Sphinx documentation webpage [_]
-- Fix issue with extract_refs (Family name of researchers appear between '' symbols)
+- Fix issue with extract_refs (Family name of researchers appear between '' symbols) [_]
 - To create Plot_General (Modify so that it behaves like Eq_General, i.e. data_base, dictionary or manual input) [_]
     - Inputs should be axis labels, length and plots. [_]
     - Possible methods: 
         - FadeIn axis [_]
         - Draw plot with iterator [_]
-- To create underbar with information like title, remaining slides and similar stuff.
+- To create underbar with information like title, remaining slides and similar stuff. [_]
 - If possible, make the equation number of the paper the key of the dictionary for Equation. [_]
-- More templates. Always more templates.
-- Extra features to Title_Section and similar (underbar, different color for first Capital letter, etc.)
-- Extra animation methods (Sliding Title_Section + delayed background, etc..)
+- More templates. Always more templates. [_]
+- Extra features to Title_Section and similar (underbar, different color for first Capital letter, etc.) [_]
+- Extra animation methods (Sliding Title_Section + delayed background, etc..) [_]
 
