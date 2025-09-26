@@ -14,7 +14,7 @@ classifiers = [
   "Operating System :: OS Independent",
 ]
 dependencies = [
-  "manim>=0.17",
+  "manim>=0.19",
   "numpy>=2.0.2",
   "pybtex>=0.23.0",
 ]
@@ -24,7 +24,7 @@ keywords = ["manim", "slides", "presentations", "beamer"]
 license = "MIT"
 license-files = ["LICENSE*"]  # Glob pattern for license files
 name = "beanim"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 
 [project.optional-dependencies]
 docs = [
