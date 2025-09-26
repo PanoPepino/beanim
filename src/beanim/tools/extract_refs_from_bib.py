@@ -76,8 +76,8 @@ def extract_citation(bib_file, your_family_name, initials, output_file_name):
             else:
                 authors.append(" ".join(person.last_names))
 
-        if "eprint" in entry.fields:
-            authors.append(entry.fields["eprint"].strip())
+        if "year" in entry.fields:
+            authors.append(entry.fields["year"].strip())
         else:
             print(f"⚠️ Entry \\cite{{{entry_key}}} has no eprint number. Please check it manually.")
             authors.append("add manually")
@@ -95,8 +95,9 @@ def extract_citation(bib_file, your_family_name, initials, output_file_name):
     with open(output_file_name, "w") as f:
         f.write("{\n")
         for ref_id, authors in author_dict.items():
-            new_authors = [author.strip("'") for author in authors]
-            out_line = f'"{ref_id}": {new_authors},\n'
+            author_list = [author for author in authors]
+            new_authors = ", ".join(author_list)
+            out_line = f'"{ref_id}": {"'[" + new_authors + "]'"},\n'
             f.write(out_line)
             print(out_line.strip())
         f.write("}\n")

@@ -47,7 +47,6 @@ from beanim import *
 (Collaboration is welcomed!!)
 
 - Fix and update Sphinx documentation webpage [_]
-- Fix issue with extract_refs (Family name of researchers appear between '' symbols) [_]
 - To create Plot_General (Modify so that it behaves like Eq_General, i.e. data_base, dictionary or manual input) [_]
     - Inputs should be axis labels, length and plots. [_]
     - Possible methods: 

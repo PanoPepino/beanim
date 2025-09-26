@@ -1,5 +1,3 @@
-"""Beanim package: tools for building beamer like slides with Manim."""
-
 from .figures import *
 from .other_objects import *
 from .graphing_objects import *

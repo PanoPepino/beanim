@@ -54,7 +54,7 @@ class Equation(Text_General, VGroup):
 
                     eq_from_extract = Equation(
                         content=["equation_extract_1", "equation_extract_3"],
-                        the_dictionary="example_extract_ref_equation/dictionaries_extracted/        equations.txt",
+                        the_dictionary="example_extract_ref_equation/dictionaries_extracted/equations.txt",
                         text_size=30,
                         the_direction=DOWN,
                         aligned_direction=LEFT,
