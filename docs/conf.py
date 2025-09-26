@@ -35,7 +35,6 @@ extensions = [
     'sphinx.ext.napoleon',                      # Support for NumPy and Google style docstrings
     'sphinx.ext.intersphinx',                   # Link to other project's documentation
     'sphinx.ext.mathjax',                       # Render math expressions
-    'manim_slides.docs.manim_slides_directive'  # Render manim-slides in-page
 ]
 
 
