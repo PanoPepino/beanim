@@ -7,15 +7,11 @@ import sys
 
 
 # -- Path setup --------------------------------------------------------------
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
 
 # Add the parent directory to sys.path to find your package
 sys.path.insert(0, os.path.abspath('../src'))
 sys.path.insert(0, os.path.abspath('../src/beanim'))
-# Or if your package is in the root directory:
-# sys.path.insert(0, os.path.abspath('..'))
+
 
 # -- Project information -----------------------------------------------------
 
@@ -58,6 +54,17 @@ html_theme = 'furo'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 html_static_path = ['_static']
+html_baseurl = 'https://yourusername.github.io/your-repository-name/'
+
+# Ensure proper file extensions for GitHub Pages
+html_file_suffix = '.html'
+html_link_suffix = '.html'
+
+# Add a .nojekyll file to disable Jekyll processing
+html_extra_path = ['.nojekyll']
+
+
+# To modify apparence of modules inside the documentation
 add_module_names = False                        # This avoids long names like beanim.text....class_name
 toc_object_entries = True                       # This allows to show the table of content-list to the right of the screen
 toc_object_entries_show_parents = "hide"        # This avoids showing the parents of each class or function

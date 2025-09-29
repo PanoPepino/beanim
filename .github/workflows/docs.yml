@@ -1,53 +1,60 @@
-name: Build and Deploy Docs
+name: Deploy Sphinx Documentation to GitHub Pages
 
 on:
   push:
-    branches:
-    - main    # or your default branch name
+    branches: [ main ]  
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # Allows manual triggering
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
-    - name: Setup uv
-      uses: astral-sh/setup-uv@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
       with:
-        enable-cache: true
-
-    - name: Install manim dependencies on Ubuntu
+        python-version: '3.11'
+        
+    - name: Install dependencies
       run: |
-        sudo apt-get update
-        sudo apt-get install build-essential python3-dev libcairo2-dev libpango1.0-dev pybtex python-pybtex-doc python3-pybtex
+        python -m pip install --upgrade pip
+        pip install sphinx sphinx_rtd_theme sphinx-autodoc-typehints myst-parser sphinx-copybutton
+        pip install -r docs/requirements.txt
 
-    - name: Install pybtex and sphinxcontrib-video
-      run: |
-        pip install pybtex
-        pip install sphinxcontrib-video
-
-    - name: Install this package
+    - name: Install your package (if needed)
       run: |
         pip install -e .
-
-    - name: Check special package instalation
+        
+    - name: Build documentation
       run: |
-        pip list | grep pybtex
-        pip list | grep sphinxcontrib-video
-
-
-
-    - name: Build docs
-      run: |
-        uv venv
-        uv sync --frozen --extra docs
-        source .venv/bin/activate
         cd docs
-        make clean html
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+        make html
+        
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+      
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/build/html
+        path: './docs/_build/html'
+        
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4

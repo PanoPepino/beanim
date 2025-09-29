@@ -15,3 +15,13 @@ tests/example_media/
 
 # Others
 .DS_Store
+
+# Sphinx documentation
+docs/_build/
+docs/.doctrees/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
