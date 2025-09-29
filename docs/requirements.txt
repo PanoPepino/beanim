@@ -3,9 +3,4 @@ sphinx_rtd_theme
 sphinx-autodoc-typehints
 myst-parser
 sphinx-copybutton
-sphinx-autosummary
-sphix-autoviewcode
-sphinx-napoleon
-sphinx-intersphinx
-sphinx-mathjax
-# Add any other extensions you're using
+

@@ -31,6 +31,9 @@ extensions = [
     'sphinx.ext.napoleon',                      # Support for NumPy and Google style docstrings
     'sphinx.ext.intersphinx',                   # Link to other project's documentation
     'sphinx.ext.mathjax',                       # Render math expressions
+    'sphinx_autodoc_typehints',
+    'sphinx_copybutton',
+    'myst_parser',
 ]
 
 
