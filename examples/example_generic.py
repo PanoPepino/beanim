@@ -2,6 +2,8 @@ from beanim import *
 from manim import *
 from manim_slides import Slide
 
+from beanim.other_objects import post_it
+
 # This method will import your desired template: [fancy_mint, blue_ice, fire_autumn, default_template]
 import_template('default_template')
 
@@ -18,7 +20,7 @@ class Generic_Presentation(Slide):
         slide_0_points = BlB(the_title="About previous slide",
                              content=[
                                  "Previous slide contained the Title of the Presentation",
-                                 "You call it wit Title\\_Presentation() class",
+                                 "You call it with Title\\_Presentation() class",
                                  "It has 3 entries: title of slides, your affiliation, your name"
                              ]).to_corner(LEFT)
 
@@ -67,6 +69,19 @@ class Generic_Presentation(Slide):
                 "Check documentation/tools for more information on this"
             ]).to_corner(DOWN)
 
+        slide_4_points = BlB(
+            content=[
+                "This is a table",
+                "Similar to equations and refs, you can manually input or use dictionary",
+                "This is a picture. It has two modes: Techno and Polaroid",
+                "This is a simple post-it with a To-do list",
+            ]).to_corner(UP)
+        table_1 = Table([["1", "2"], ["3", "4"]]).to_corner(DOWN)
+        photo_1 = Photo("figures/pedro.png", decorator_style="polaroid", caption="My Photo")
+        photo_2 = Photo("figures/pedro.png", decorator_style="techno")
+        photos = Group(photo_1, photo_2).arrange(RIGHT, buff=0.5).to_corner(DOWN)
+        p_it = Post_It(to_dos=["Task 1", "Task 2"], text_color=BLACK, pin_color=BLACK).to_corner(DOWN)
+
         # Slide Manipulation
         self.play(FadeIn(title_slide))
         self.next_slide(notes='to slide about title')
@@ -74,17 +89,21 @@ class Generic_Presentation(Slide):
         for _ in range(len(slide_0_points.content) + 1):
             self.next_slide()
             self.play(slide_0_points.next_point())
+
         self.next_slide(notes='to slide about section and bulleted list')
         self.wipe(slide_0_points, slide_1_title)
         self.play(FadeIn(slide_1_points_1))
+
         self.next_slide(notes='to slide about section and bulleted list')
         self.play(ReplacementTransform(slide_1_points_1, slide_1_points_2))
-        for _ in range(len(slide_1_points_2.content) + 3):
+        for _ in range(len(slide_1_points_2.content) + 2):
             self.next_slide()
             self.play(slide_1_points_2.next_point())
+
         self.next_slide(notes='to slide about refs')
         self.wipe(Group(slide_1_title, slide_1_points_2), refs)
         self.play(Write(slide_2_points_1))
+
         self.next_slide(notes='to slide about equations')
         self.wipe(Group(slide_2_points_1, refs), Group(eq_1, slide_3_points_1))
         for _ in range(len(slide_3_points_1.content)-1):
@@ -93,9 +112,23 @@ class Generic_Presentation(Slide):
         self.next_slide()
         self.play(ReplacementTransform(eq_1, eq_2))
         self.play(slide_3_points_1.next_point())
-        self.next_slide(notes='to end')
+        self.next_slide()
         self.play(slide_3_points_1.next_point())
-        self.play(FadeOut(slide_3_points_1, eq_2))
+
+        self.next_slide(notes="to minor things", auto_next=True)
+        self.wipe(Group(slide_3_points_1, eq_2), Group(slide_4_points))
+        self.next_slide()
+        self.play(slide_4_points.next_point(), FadeIn(table_1))
+        self.next_slide()
+        self.play(slide_4_points.next_point())
+        self.next_slide()
+        self.wipe(table_1, photos)
+        self.play(slide_4_points.next_point())
+        self.next_slide()
+        self.wipe(photos, p_it)
+        self.play(slide_4_points.next_point())
+        self.next_slide()
+        self.play(FadeOut(slide_4_points, p_it))
 
 
 class Title_Slide_Test(Scene):  #  A simple title slide

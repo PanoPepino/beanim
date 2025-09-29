@@ -10,11 +10,11 @@
 Here you can find an overview of the current templates and how almost all objects look like in each template (You can find the code in examples/example_generic.py file). 
 New templates will be added in the incoming versions.
 
-| ![](docs/source/media/images/TST_dt.png) | ![](docs/source/media/images/TST_fm.png) | ![](docs/source/media/images/TST_fa.png) | ![](docs/source/media/images/TST_ba.png) |
+| ![](docs/_static/media/images/TST_dt.png) | ![](docs/_static/media/images/TST_fm.png) | ![](docs/_static/media/images/TST_fa.png) | ![](docs/_static/media/images/TST_ba.png) |
 |:--------------------:|:--------------------:|:--------------------:|:--------------------:|
 | Title Slide default template            | Title Slide fancy_mint template          | Title Slide fire_autumn template            | Title Slide blue_ice template            |
 
-| ![](docs/source/media/images/GST_dt.png) | ![](docs/source/media/images/GST_fm.png) | ![](docs/source/media/images/GST_fa.png) | ![](docs/source/media/images/GST_ba.png) |
+| ![](docs/_static/media/images/GST_dt.png) | ![](docs/_static/media/images/GST_fm.png) | ![](docs/_static/media/images/GST_fa.png) | ![](docs/_static/media/images/GST_ba.png) |
 |:--------------------:|:--------------------:|:--------------------:|:--------------------:|
 | Generic Slide default template            | Generic Slide fancy_mint template          | Generic Slide fire_autumn template            | Generic Slide blue_ice template            |
 
