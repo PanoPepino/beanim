@@ -31,9 +31,6 @@ extensions = [
     'sphinx.ext.napoleon',                      # Support for NumPy and Google style docstrings
     'sphinx.ext.intersphinx',                   # Link to other project's documentation
     'sphinx.ext.mathjax',                       # Render math expressions
-    'sphinx_autodoc_typehints',
-    'sphinx_copybutton',
-    'myst_parser',
 ]
 
 
@@ -77,6 +74,48 @@ autodoc_class_signature = "separated"
 
 # This value selects what content will be inserted into the main body of an autoclass directive.
 autoclass_content = 'class'  # Include both class docstring and __init__ docstring
+
+
+def clean_api_titles(api_dir="docs/source/api"):
+    """
+    Change .rst file titles to use only the leaf name (shortest part after last dot),
+    with underscores not escaped, and remove any trailing 'package' or 'module'.
+    """
+    for fname in os.listdir(api_dir):
+        if fname.endswith(".rst"):
+            path = os.path.join(api_dir, fname)
+            with open(path, "r", encoding="utf8") as f:
+                lines = f.readlines()
+            # Sphinx-apidoc escapes _ as \_ in headings, so match either
+            title_line = lines[0].strip()
+            # Unescape underscores for processing
+            decoded_title = title_line.replace("\\_", "_")
+            # Match: e.g. beanim.text_and_organisation.blb module
+            found = re.match(r"^([\w\.]+) (package|module)$", decoded_title)
+            if found:
+                leaf = found.group(1).split(".")[-1]
+                # Write unescaped clean title
+                new_title = leaf + "\n"
+                lines[0] = new_title
+                lines[1] = "=" * len(leaf) + "\n"
+                with open(path, "w", encoding="utf8") as f:
+                    f.writelines(lines)
+
+
+clean_api_titles("api")
+
+# To remove documentation on functions that do not belong to the package
+
+
+def skip_undoc_members(app, what, name, obj, skip, options):
+    if what in ('function', 'method') and (obj.__doc__ is None or not obj.__doc__.strip()):
+        return True  # Skip undocumented functions/methods
+    return skip
+
+
+def setup(app):
+    app.connect("autodoc-skip-member", skip_undoc_members)
+
 
 # This value is a list of autodoc directive flags that should be automatically applied to all autodoc directives.
 autodoc_default_options = {

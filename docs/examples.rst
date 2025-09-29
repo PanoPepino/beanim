@@ -12,18 +12,18 @@ This package comes equipped with different templates to homogenise the look of t
 
     <table style="width:100%; table-layout: fixed;">
       <tr>
-        <td><img src="../../source/media/images/TST_dt.png" style="width:100%;"/></td>
-        <td><img src="../../source/media/images/GST_dt.png" style="width:100%;"/></td>
+        <td><img src="_static/media/images/TST_dt.png" style="width:100%;"/></td>
+        <td><img src="_static/media/images/GST_dt.png" style="width:100%;"/></td>
       </tr>
       <tr>
-        <td><img src="../../source/media/images/TST_ba.png" style="width:100%;"/></td>
-        <td><img src="../../source/media/images/GST_ba.png" style="width:100%;"/></td>
+        <td><img src="_static/media/images/TST_ba.png" style="width:100%;"/></td>
+        <td><img src="_static/media/images/GST_ba.png" style="width:100%;"/></td>
       </tr><tr>
-        <td><img src="../../source/media/images/TST_fa.png" style="width:100%;"/></td>
-        <td><img src="../../source/media/images/GST_fa.png" style="width:100%;"/></td>
+        <td><img src="_static/media/images/TST_fa.png" style="width:100%;"/></td>
+        <td><img src="_static/media/images/GST_fa.png" style="width:100%;"/></td>
       </tr><tr>
-        <td><img src="../../source/media/images/TST_fm.png" style="width:100%;"/></td>
-        <td><img src="../../source/media/images/GST_fm.png" style="width:100%;"/></td>
+        <td><img src="_static/media/images/TST_fm.png" style="width:100%;"/></td>
+        <td><img src="_static/media/images/GST_fm.png" style="width:100%;"/></td>
       </tr>
     </table>
 
