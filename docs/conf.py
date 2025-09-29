@@ -57,7 +57,7 @@ html_theme = 'furo'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 html_static_path = ['_static']
-html_baseurl = 'https://yourusername.github.io/your-repository-name/'
+html_baseurl = 'https://yourusername.github.io/beanim/'
 
 # Ensure proper file extensions for GitHub Pages
 html_file_suffix = '.html'
