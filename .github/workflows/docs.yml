@@ -1,9 +1,7 @@
-name: Deploy Sphinx Documentation to GitHub Pages
+name: Deploy Sphinx Documentation
 
 on:
   push:
-    branches: [ main ]  
-  pull_request:
     branches: [ main ]
   workflow_dispatch:  # Allows manual triggering
 
@@ -17,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  deploy-docs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -32,13 +30,17 @@ jobs:
       with:
         python-version: '3.11'
         
-    - name: Install dependencies
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libcairo2-dev libpango1.0-dev libpangocairo-1.0-0
+        
+    - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install sphinx sphinx_rtd_theme sphinx-autodoc-typehints myst-parser sphinx-copybutton
         pip install -r docs/requirements.txt
-
-    - name: Install your package (if needed)
+        
+    - name: Install package
       run: |
         pip install -e .
         
