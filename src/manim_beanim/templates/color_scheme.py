@@ -46,10 +46,10 @@ def import_template(module_name: str):
 
     # Import base template
     if module_name in allowed_modules:
-        module_path = f"beanim.templates.collection.{module_name}"
+        module_path = f"manim_beanim.templates.collection.{module_name}"
         print("Using " + f'{module_name}' + " template!!")
     else:
         print("That template does not exist. Using default B/W template instead!!")
-        module_path = "beanim.templates.collection.default_template"
+        module_path = "manim_beanim.templates.collection.default_template"
 
     importlib.import_module(module_path)

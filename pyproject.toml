@@ -23,7 +23,7 @@ dynamic = ["readme", "version"]
 keywords = ["manim", "slides", "presentations", "beamer"]
 license = "MIT"
 license-files = ["LICENSE*"]  # Glob pattern for license files
-name = "beanim"
+name = "manim_beanim"
 requires-python = ">=3.11"
 
 [project.optional-dependencies]
@@ -37,7 +37,7 @@ Documentation = "https://panopepino.github.io/beanim/"
 Repository = "https://github.com/PanoPepino/beanim"
 
 [tool.hatch.version]
-path = "src/beanim/__version__.py"
+path = "src/manim_beanim/__version__.py"
 
 [tool.ruff.lint]
 extend-ignore = []

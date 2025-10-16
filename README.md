@@ -1,8 +1,15 @@
 ## About Beanim
 ---------------------------------------------------------------------
+
 - This repository contains v2.0 of beanim (Beamer + Manim) libraries. 
-- This package aims to offer a similar experience to that of beamer in latex, by offering similar properties in Manim + ManimSlides to the slides created by Beamer.
-- While the package is currently quite limited, the idea would be to improve and expand by collaboration with other interested people.
+- This package aims to offer a similar experience to that of beamer in latex, by offering familiar properties in Manim + ManimSlides to the slides created by Beamer.
+- While the package is currently quite limited, the idea would be to improve and expand by collaboration with other people interested in enhancing the package.
+
+-----------------------------------------------------------------------
+
+[!WARNING]
+- The package will be displayed in pip as **manim_beanim**. This is also the way to import the package in the preamble of your python files. However, documentation and webpage will just keep the name as **beanim** for simplicity.
+
 -----------------------------------------------------------------------
 
 ## Examples
@@ -21,23 +28,21 @@ New templates will be added in the incoming versions.
 
 -----------------------------------------------------------------------
 
-## Installation
+## Installation and use
 
-In order to **install** this library, do the following:
+- In order to **install** this library, do the following:
 
 ```bash
 git clone https://github.com/PanoPepino/beanim
 
-pip install .
+pip install beanim/ .
 
 ```
 
-## Usage
-
-To **use** it in your manim files, call it with:
+- To **use** with in your manim files, call it with:
 
 ```python
-from beanim import *
+from manim_beanim import *
 ```
 
 -----------------------------------------------------------------------
@@ -46,15 +51,18 @@ from beanim import *
 
 (Collaboration is welcomed!!)
 
-- Fix and update Sphinx documentation webpage [_]
+- Create logo to add to Github and webpage [_]
+- Check docstrings for a better documentation experience [_]
+- Fix table class [_]
+- Add personal research equations and references. Ignore with .git. [_]
 - To create Plot_General (Modify so that it behaves like Eq_General, i.e. data_base, dictionary or manual input) [_]
     - Inputs should be axis labels, length and plots. [_]
     - Possible methods: 
         - FadeIn axis [_]
         - Draw plot with iterator [_]
-- To create underbar with information like title, remaining slides and similar stuff. [_]
+- To create underbar with information like title, author, remaining slides and similar stuff. [_]
 - If possible, make the equation number of the paper the key of the dictionary for Equation. [_]
-- More templates. Always more templates. [_]
+- More templates. Always more templates. Try to simulate most known beamer ones. [_]
 - Extra features to Title_Section and similar (underbar, different color for first Capital letter, etc.) [_]
 - Extra animation methods (Sliding Title_Section + delayed background, etc..) [_]
 

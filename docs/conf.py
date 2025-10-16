@@ -5,12 +5,11 @@ import re
 import os
 import sys
 
-
 # -- Path setup --------------------------------------------------------------
 
 # Add the parent directory to sys.path to find your package
 sys.path.insert(0, os.path.abspath('../src'))
-sys.path.insert(0, os.path.abspath('../src/beanim'))
+sys.path.insert(0, os.path.abspath('../src/manim_beanim'))
 
 
 # -- Project information -----------------------------------------------------
@@ -18,8 +17,6 @@ sys.path.insert(0, os.path.abspath('../src/beanim'))
 project = 'Beanim'
 copyright = '2025, Pano'
 author = 'Pano'
-
-# The short X.Y version
 
 # -- General configuration ---------------------------------------------------
 
@@ -54,7 +51,7 @@ html_theme = 'furo'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 html_static_path = ['_static']
-html_baseurl = 'https://yourusername.github.io/beanim/'
+html_baseurl = 'https://panopepino.github.io/beanim/'
 
 # Ensure proper file extensions for GitHub Pages
 html_file_suffix = '.html'

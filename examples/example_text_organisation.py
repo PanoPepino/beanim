@@ -1,5 +1,5 @@
 from manim import *
-from beanim import *
+from manim_beanim import *
 
 import_template('fancy_mint')
 

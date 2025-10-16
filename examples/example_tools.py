@@ -1,4 +1,4 @@
-from beanim import extract_citation, extract_equations
+from manim_beanim import extract_citation, extract_equations
 
 extract_citation(
     bib_file="example_extract_ref_equation/latex_to_extract/refs_example.bib",  # .bib file to extract references from
