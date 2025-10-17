@@ -40,7 +40,7 @@ class Equation(Text_General, VGroup):
         .. code-block:: python
 
             from manim import *
-            from beanim import *
+            from manim_beanim import *
 
             class Equation_Test(Scene):
                 def construct(self):

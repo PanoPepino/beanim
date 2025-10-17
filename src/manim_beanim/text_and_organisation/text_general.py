@@ -281,6 +281,7 @@ class Text_General(VGroup):
            If ``decorator_presence`` is set to ``"no"`` or any unrecognized value,
            the mobject is added without decoration.
         """
+        mobject.set_z_index(5)
         if getattr(self, "decorator_presence", None) == "box":
             box = SurroundingRectangle(
                 mobject,
@@ -296,7 +297,7 @@ class Text_General(VGroup):
         elif getattr(self, "decorator_presence", None) == "box_long_right":
             self.box_long = RoundedRectangle(
                 height=mobject.get_height() + self.tightness,
-                width=mobject.get_width() + 20,
+                width=mobject.get_width() + 10,
                 stroke_width=self.decorator_stroke_width,
                 color=self.decorator_color,
                 fill_opacity=self.fill_opa,
@@ -307,7 +308,7 @@ class Text_General(VGroup):
                 mobject.get_left(),
                 RIGHT,
                 aligned_edge=LEFT,
-                buff=-self.tightness,
+                buff=-1/2*self.tightness,
             )
             t_sec = VGroup(mobject, self.box_long)
             self.add(t_sec)
@@ -315,7 +316,7 @@ class Text_General(VGroup):
         elif getattr(self, "decorator_presence", None) == "box_long_left":
             self.box_long = RoundedRectangle(
                 height=mobject.get_height() + self.tightness,
-                width=mobject.get_width() + 5,
+                width=mobject.get_width() + 10,
                 stroke_width=self.decorator_stroke_width,
                 color=self.decorator_color,
                 fill_opacity=self.fill_opa,
@@ -333,15 +334,16 @@ class Text_General(VGroup):
             self.add(t_sec)
 
         elif getattr(self, "decorator_presence", None) == "back_frame":
-            self.rectangle = Rectangle(
-                height=mobject.get_height() + self.tightness,
-                width=2*config.frame_width + 0.1,
+            self.rectangle = RoundedRectangle(
+                height=mobject.get_height() + 1.5*self.tightness,
+                width=config.frame_width + 0.1,
                 stroke_width=self.decorator_stroke_width,
+                corner_radius=self.corner_rad,
                 color=self.decorator_color,
                 fill_opacity=self.fill_opa,
-                stroke_opacity=self.stroke_opa,
+                stroke_opacity=self.stroke_opa
             )
-            self.rectangle.move_to(mobject.get_center())
+            self.rectangle.move_to([0,mobject.get_y(),0])
             self.add(mobject, self.rectangle)
 
         else:

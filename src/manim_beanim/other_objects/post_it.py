@@ -25,7 +25,7 @@ class Post_It(Group):
     .. code-block:: python
 
         from manim import *
-        from beanim import Post_It
+        from manim_beanim import Post_It
 
         class PostItScene(Scene):
             def construct(self):

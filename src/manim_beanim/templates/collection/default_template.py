@@ -77,6 +77,10 @@ Equation.set_default(
     aligned_direction=deftemp['aligned_direction_1']
 )
 
+Underbar.set_default(
+  
+)
+
 # Any Table
 Table.set_default(
     highlight_top="yes",

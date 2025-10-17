@@ -1,7 +1,7 @@
 from manim import *
 from manim_beanim import *
 
-import_template('fancy_mint')
+import_template('green_mint')
 
 
 class Example_Table(Scene):
@@ -9,7 +9,8 @@ class Example_Table(Scene):
         table = Table(
             content=[["1", "2"], ["3", "4"]])
         table_2 = Table(content="table_data_base_2", dictionary="data_base")
-        self.add(VGroup(table, table_2).arrange(DOWN))
+        table_3 = Table(content="table_data_base_3", dictionary="data_base")
+        self.add(VGroup(table, table_2, table_3).arrange(DOWN).scale_to_fit_height(config.frame_height - 1))
 
 
 class Example_Photo_Post_it(Scene):

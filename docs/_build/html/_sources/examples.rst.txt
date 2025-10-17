@@ -4,9 +4,11 @@ Quick Guide
 This package comes equipped with different templates to homogenise the look of the slides.
 
 * default_template
-* blue_autumn
-* fire_autumn
-* fancy_mint
+* blue_ice
+* red_autumn
+* green_mint
+* beamer_green
+* beamer_blue
 
 .. raw:: html
 
@@ -25,6 +27,10 @@ This package comes equipped with different templates to homogenise the look of t
         <td><img src="_static/media/images/TST_fm.png" style="width:100%;"/></td>
         <td><img src="_static/media/images/GST_fm.png" style="width:100%;"/></td>
       </tr>
+      <tr>
+        <td><img src="_static/media/images/TST_bb.png" style="width:100%;"/></td>
+        <td><img src="_static/media/images/GST_bb.png" style="width:100%;"/></td>
+      </tr>
     </table>
 
 
@@ -34,21 +40,22 @@ These templates can be called by importing them at the preamble of the file.py t
 
     from manim import *
     from manim-slides import *
-
-    import_template('fire_autumn')
+    from manim_beanim import * 
+    import_template('default_template')
 
     class Your_Fancy_Presentation(Slides):
         ....
 
-Then, let us build our presentation. We will first define the characters of the presentation (the `objects <https://github.com/PanoPepino/beanim/issues>`_. we are going to use through the slides). After this, one can include the script of the slides with the commands provided in `Manim-Slides <https://manim-slides.eertmans.be/latest/quickstart.html>`_. Alternatively, you can define all the objects in a file.py and import all them into the script.py to run with Manim-Slides.
+Then, let us build our presentation. We will first define the characters of the presentation (the `objects <https://github.com/PanoPepino/manim_beanim/issues>`_. we are going to use through the slides). After this, one can include the script of the slides with the commands provided in `Manim-Slides <https://manim-slides.eertmans.be/latest/quickstart.html>`_. Alternatively, you can define all the objects in a file.py and import all them into the script.py to run with Manim-Slides.
 
 
 .. code-block:: python
 
     from manim import *
     from manim-slides import *
+    from manim_beanim import *
 
-    import_template('fire_autumn')
+    import_template('default_template')
 
     class Quick_Presentation(Slide):
     def construct(self):

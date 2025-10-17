@@ -1,9 +1,19 @@
-
 # Configuration file for the Sphinx documentation builder.
 
 import re
 import os
 import sys
+
+# To update or create new documentation, do as follows:
+# 1) Navigate to your package (not the src folder) and create a docs folder.
+# 2) In docs folder, run sphinx-apidoc -o ./api ../src/name_pkg. This will load all modules information inside the folder api, for simplicity and clean set up when creating html
+# 3) Modify your conf.py file to the right path. Copy and paste this conf.py file. It is quite complete.
+# 4) Modify your index.rst to include a nice presentation and stuff. You can create additional .rst files in other folders or ar the same level. In the ..toctree of index.rst, you can just add those files with extra info. This ..toctree will include an api/modules reference.
+# 5) Go to api/modules.rst and modify it so that it display your desired modules.
+# 6) Go to each module and remove those parts/headings you do not like (i.e. Submodules, Module contents, etc)
+# 7) Using vscode or any other tool, remove all :undoc-members: in all .rst files. This will help you to get rid of methods that are inherited.
+# 8) Run make clean html. The inbuilt functions in conf.py will get rid of annoying naming (i.e. package.module.submodule.class -> class) and also will remove __init__ or similar documentation.
+# 9) Double check everything makes sense. Run make clean html again and evaluate result.
 
 # -- Path setup --------------------------------------------------------------
 
@@ -41,6 +51,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 nitpicky = False
+
+html_static_path = ['_static']
+html_logo = "_static/media/slide.svg"
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -104,14 +117,18 @@ clean_api_titles("api")
 # To remove documentation on functions that do not belong to the package
 
 
-def skip_undoc_members(app, what, name, obj, skip, options):
-    if what in ('function', 'method') and (obj.__doc__ is None or not obj.__doc__.strip()):
-        return True  # Skip undocumented functions/methods
+def skip_inherited_members(app, what, name, obj, skip, options):
+    if hasattr(obj, "__objclass__") and obj.__objclass__ is not None:
+        currentclass = options.get("class", None)
+        print(f"Checking {name}: objclass={obj.__objclass__.__name__} currentclass={currentclass}")
+        if currentclass and obj.__objclass__.__name__ != currentclass:
+            print(f"Skipping {name} because inherited")
+            return True
     return skip
 
 
 def setup(app):
-    app.connect("autodoc-skip-member", skip_undoc_members)
+    app.connect("autodoc-skip-member", skip_inherited_members)
 
 
 # This value is a list of autodoc directive flags that should be automatically applied to all autodoc directives.

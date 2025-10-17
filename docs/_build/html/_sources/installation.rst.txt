@@ -27,4 +27,8 @@ In order to check that the installation was fruitful, you can just type:
 
 .. code-block:: bash
 
-   pip show beanim
+   pip show manim_beanim
+
+.. note::
+
+   While the name of the repository remains as **Beanim**, note that the package you are installing will be called **manim_beanim**. This will group all your manim packages and addons in appropiate alphabetic order when using pip show.

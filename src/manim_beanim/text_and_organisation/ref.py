@@ -35,7 +35,7 @@ class Reference(Text_General):
     .. code-block:: python
 
         from manim import *
-        from beanim import *
+        from manim_beanim import *
 
         class Ref_Test(Scene):
             def construct(self):

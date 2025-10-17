@@ -27,7 +27,7 @@ class Title_Section(Text_General, VGroup):
     .. code-block:: python
 
         from manim import *
-        from beanim import *
+        from manim_beanim import *
 
         class Title_Section_Test(Scene):
             def construct(self):
@@ -43,5 +43,5 @@ class Title_Section(Text_General, VGroup):
         super().__init__(**kwargs)
 
         self.title = Tex(self.content, font_size=1.5 * self.text_size, color=self.text_color)
-        self.title.to_corner(UL)
+        self.title.to_corner(UL, buff = 0.2)
         self.add_decorator(self.title)

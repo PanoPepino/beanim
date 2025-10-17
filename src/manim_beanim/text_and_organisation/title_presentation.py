@@ -30,7 +30,7 @@ class Title_Presentation(Text_General, VGroup):
     .. code-block:: python
 
         from manim import *
-        from beanim import *
+        from manim_beanim import *
 
         class Title_Slide_Test(Scene):
             def construct(self):

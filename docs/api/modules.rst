@@ -1,11 +1,11 @@
 Reference Documentation
-=======================
+============
 
 .. toctree::
    :maxdepth: 2
 
-   beanim.text_and_organisation
-   beanim.graphing_objects
-   beanim.other_objects
-   beanim.templates
-   beanim.tools
+   manim_beanim.graphing_objects
+   manim_beanim.other_objects
+   manim_beanim.templates
+   manim_beanim.text_and_organisation
+   manim_beanim.tools

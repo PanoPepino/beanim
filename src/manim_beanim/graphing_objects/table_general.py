@@ -78,7 +78,7 @@ class Table(VGroup):
     .. code-block:: python
 
         from manim import *
-        from beanim import Table
+        from manim_beanim import Table
 
         class Example_Table(Scene):
             def construct(self):
@@ -234,7 +234,7 @@ class Table(VGroup):
             box = SurroundingRectangle(
                 mobject,
                 corner_radius=self.corner_rad_all,
-                buff=self.tightness,
+                buff=4*self.tightness,
                 stroke_width=self.decorator_stroke_width,
                 color=self.decorator_color,
                 fill_opacity=self.fill_opa,

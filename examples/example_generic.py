@@ -3,7 +3,7 @@ from manim import *
 from manim_slides import Slide
 
 # This method will import your desired template: [fancy_mint, blue_ice, fire_autumn, default_template]
-import_template('fancy_mint')
+import_template('green_mint')
 
 title_of_project = "A quick guide to Beanim"
 affiliation = "University of mars"

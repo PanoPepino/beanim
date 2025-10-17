@@ -42,7 +42,7 @@ def extract_citation(bib_file, your_family_name, initials, output_file_name):
 
     .. code-block:: python
 
-        from beanim import extract_citation
+        from manim_beanim import extract_citation
 
         extract_citation(
             bib_file="example_extract_ref_equation/latex_to_extract/refs_example.bib",

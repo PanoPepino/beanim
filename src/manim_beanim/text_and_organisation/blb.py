@@ -28,7 +28,7 @@ class BlB(Text_General, Group):
     .. code-block:: python
 
         from manim import *
-        from beanim import *
+        from manim_beanim import *
 
         class BlB_Test(Scene):
             def construct(self):

@@ -1,7 +1,7 @@
 from manim import *
 from manim_beanim import *
 
-import_template('fancy_mint')
+import_template('beamer_green')
 
 
 class Title_Slide_Test(Scene):
@@ -81,7 +81,7 @@ class Generic_Slide_Test(Scene):
         ref1 = Reference(dictionary="example_extract_ref_equation/dictionaries_extracted/refs.txt",
                          content=['ref_extract_1', 'ref_extract_2'])
         ref2 = Reference(content='[This is a fake ref, PP, XXYYZZ]')
-        refs = VGroup(ref1, ref2).arrange(DOWN, buff=0.05).to_corner(UR)
+        refs = VGroup(ref1, ref2).arrange(DOWN, buff=0.05).to_corner(UR, buff=0.2)
 
         important_points = BlB(
             content=[
@@ -90,15 +90,24 @@ class Generic_Slide_Test(Scene):
                 "... And for the last point you can recover all points in the initial color",
             ]).to_corner(LEFT).shift(UP)
 
-        my_table = Table(content="table_data_base_1", dictionary="data_base").to_corner(DL)
+        my_table = Table(content="table_data_base_1", dictionary="data_base").to_corner(DL, buff=0.4)
+        tt = Underbar(content=["Pano Pepino", "Some University", "My talk in China",
+                      "17th October 2025"])
 
         eq_show = Equation(
             dictionary="example_extract_ref_equation/dictionaries_extracted/equations.txt",
             content="equation_extract_2",
-        ).to_corner(DR)
+        ).to_corner(DR, buff=0.4)
 
-        self.add(refs, slide_title, important_points, my_table, eq_show)
+        self.add(refs, slide_title, important_points, my_table, eq_show, tt)
 
 #        for point in range(len(important_points) + 3):
 #           self.play(important_points.next_point())
 #         self.play(FadeIn(eq_show))
+
+
+class Underbar_Test(Scene):
+    def construct(self):
+        under = Underbar(content=["Pano Pepino", "Some University", "My talk in the Mooon",
+                                  "30th February 2050"])
+        self.add(under)

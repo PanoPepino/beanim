@@ -24,16 +24,18 @@ def import_template(module_name: str):
        the template is properly loaded before any Beanim objects are created.
 
     **Available templates:**
-        - ``"fancy_mint"``
+        - ``"green_mint"``
         - ``"blue_ice"``
-        - ``"fire_autumn"``
+        - ``"red_autumn"``
+        - ``"beamer_blue"``
+        - ``"beamer_green"``
         - ``"default_template"`` (fallback)
 
     **Example usage:**
 
     .. code-block:: python
 
-        from beanim import *
+        from manim_beanim import *
 
         import_template('desired_template')
 
@@ -42,7 +44,7 @@ def import_template(module_name: str):
                 # Your Beanim objects will now use the selected template
                 pass
     """
-    allowed_modules = ["fancy_mint", "blue_ice", "fire_autumn"]
+    allowed_modules = ["green_mint", "blue_ice", "red_autumn", "beamer_blue", "beamer_green"]
 
     # Import base template
     if module_name in allowed_modules:

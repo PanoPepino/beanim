@@ -3,6 +3,8 @@ Beanim Documentation
 
 Beanim (Beamer + Manim) is a simple package that aims to reproduce beamer-like vibes in Manim + Manim-Slides configuration.
 Its main philosofy is to provide a simple, homogenised template of basic presentation objects so that you can craft your slides in a straightforward way.
+You can find the repository in  `Github <https://github.com/PanoPepino/beanim>`_.
+
 
 .. note::
 

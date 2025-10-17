@@ -33,8 +33,8 @@ docs = [
 ]
 
 [project.urls]
-Documentation = "https://panopepino.github.io/beanim/"
-Repository = "https://github.com/PanoPepino/beanim"
+Documentation = "https://panopepino.github.io/manim_beanim/"
+Repository = "https://github.com/PanoPepino/manim_beanim"
 
 [tool.hatch.version]
 path = "src/manim_beanim/__version__.py"
@@ -46,10 +46,10 @@ extend-select = [
   "I",  # Isort
   "TID",  # https://docs.astral.sh/ruff/rules/relative-imports/
 ]
-isort = {known-first-party = ["beanim"]}
+isort = {known-first-party = ["manim_beanim"]}
 
 [tool.uv]
 dev-dependencies = [
-  "beanim[docs]",
+  "manim_beanim[docs]",
   "pre-commit>=3.5.0",
 ]

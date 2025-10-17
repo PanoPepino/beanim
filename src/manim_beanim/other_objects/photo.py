@@ -82,7 +82,7 @@ class Photo(Group):
     .. code-block:: python
 
         from manim import *
-        from beanim import Photo
+        from manim_beanim import Photo
 
         class Example_Photo(Scene):
             def construct(self):
