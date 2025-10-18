@@ -1,6 +1,6 @@
 ## About Beanim
 
-- This repository contains v2.0 of beanim (Beamer + Manim) libraries. 
+- This repository contains v2.1 of beanim (Beamer + Manim) libraries. 
 - This package aims to offer a similar experience to that of beamer in latex, by offering familiar properties in Manim + ManimSlides to the slides created by Beamer.
 - While the package is currently quite limited, the idea would be to improve and expand by collaboration with other people interested in enhancing the package.
 
@@ -50,7 +50,6 @@ from manim_beanim import *
 
 (Collaboration is welcomed!!)
 
-- Create logo to add to Github and webpage [_]
 - Add personal research equations and references. Ignore with .git. [_]
 - To create Plot_General (Modify so that it behaves like Eq_General, i.e. data_base, dictionary or manual input) [_]
     - Inputs should be axis labels, length and plots. [_]
