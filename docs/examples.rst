@@ -46,7 +46,7 @@ These templates can be called by importing them at the preamble of the file.py t
     class Your_Fancy_Presentation(Slides):
         ....
 
-Then, let us build our presentation. We will first define the characters of the presentation (the `objects <https://github.com/PanoPepino/manim_beanim/issues>`_. we are going to use through the slides). After this, one can include the script of the slides with the commands provided in `Manim-Slides <https://manim-slides.eertmans.be/latest/quickstart.html>`_. Alternatively, you can define all the objects in a file.py and import all them into the script.py to run with Manim-Slides.
+Then, let us build our presentation. We will first define the characters of the presentation (the different objects of this package we are going to use through the slides). After this, one can include the script of the slides with the commands provided in `Manim-Slides <https://manim-slides.eertmans.be/latest/quickstart.html>`_. Alternatively, you can define all the objects in a file.py and import all them into the script.py to run with Manim-Slides.
 
 
 .. code-block:: python
