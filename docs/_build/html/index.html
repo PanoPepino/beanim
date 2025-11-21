@@ -179,7 +179,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -206,11 +206,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html">Quick Guide</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="api/modules.html">Reference Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Reference Documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api/modules.html">Beanim Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Beanim Documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/manim_beanim.text_and_organisation.html">text_and_organisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/manim_beanim.graphing_objects.html">graphing_objects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/manim_beanim.other_objects.html">other_objects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/manim_beanim.templates.html">templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/manim_beanim.text_and_organisation.html">text_and_organisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/manim_beanim.tools.html">tools</a></li>
 </ul>
 </li>
@@ -248,7 +248,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -257,18 +257,20 @@
           <section id="beanim-documentation">
 <h1>Beanim Documentation<a class="headerlink" href="#beanim-documentation" title="Link to this heading">¶</a></h1>
 <p>Beanim (Beamer + Manim) is a simple package that aims to reproduce beamer-like vibes in Manim + Manim-Slides configuration.
-Its main philosofy is to provide a simple, homogenised template of basic presentation objects so that you can craft your slides in a straightforward way.
+Its main philosophy is to provide a simple, homogenised template of basic presentation objects so that you can craft your slides in a straightforward way.
 You can find the repository in  <a class="reference external" href="https://github.com/PanoPepino/beanim">Github</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This is a personal package under construction. New features and a more optimised organisation will come. Also, if you are an expert in this kind of things, and want to collaborate, you are more than welcome to enhance this humble library! In case you find some and/or have some suggestions, please
 report at <a class="reference external" href="https://github.com/PanoPepino/beanim/issues">github issues</a>.</p>
 </div>
-<p>This is an example of a presentation crafted with Manim + Manim-Slides+ Beanim.</p>
+<section id="example-presentation">
+<h2>Example Presentation<a class="headerlink" href="#example-presentation" title="Link to this heading">¶</a></h2>
+<p>This is an example of a presentation crafted with Manim + Manim-Slides + Beanim:</p>
 <div style="position:relative;padding-bottom:56.25%;">
     <iframe
         loading="lazy"
-        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        style="width:100%;height:100%;position:absolute;left:0px;top:0px; border: 2px solid #000000ff; border-radius: 8px;"
         frameborder="0"
         width="100%"
         height="100%"
@@ -276,19 +278,34 @@ report at <a class="reference external" href="https://github.com/PanoPepino/bean
         allow="autoplay"
         src="https://panopepino.github.io/web_page/main_page/presentations/2025_06_jsps/jsps_slide.html">
     </iframe>
-</div><p>If you want more detailed explanations, see <a class="reference internal" href="examples.html"><span class="doc">Quick Guide</span></a>. You can also find a simple guide to install in <a class="reference internal" href="installation.html"><span class="doc">Installation</span></a>.</p>
+</div></section>
+<hr class="docutils" />
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h2>
+<p>If you want more detailed explanations, see <a class="reference internal" href="examples.html"><span class="doc">Quick Guide</span></a>. You can also find a simple guide to install in <a class="reference internal" href="installation.html"><span class="doc">Installation</span></a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>I would like to thank Abulafia and Uwezi (and all the <a class="reference external" href="https://discord.gg/nfJXC2qh">Manim CE Discord</a>) for unvaluable help. As well, I am grateful to Jérome Eertmans, creator of the package <a class="reference external" href="https://manim-slides.eertmans.be/latest/index.html">Manim-Slides</a> for his guidance on creating this package!</p>
+<p>I would like to thank Abulafia and Uwezi (and all the <a class="reference external" href="https://discord.gg/nfJXC2qh">Manim CE Discord</a>) for invaluable help. As well, I am grateful to Jérome Eertmans, creator of the package <a class="reference external" href="https://manim-slides.eertmans.be/latest/index.html">Manim-Slides</a> for his guidance on creating this package!</p>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html">Quick Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/modules.html">Reference Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/modules.html">Beanim Documentation</a></li>
 </ul>
 </div>
+<hr class="docutils" />
+<div style="text-align: center; margin: 30px 0;">
+  <p style="font-size: 16px; margin-bottom: 15px;">
+    💖 <strong>If you find this project helpful, consider supporting its development. Thank you!</strong>
+  </p>
+  <a href="https://www.buymeacoffee.com/panopepino" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+         alt="Buy Me A Coffee"
+         style="height: 50px; border-radius: 10px;">
+  </a>
+</div></section>
 </section>
 
         </article>
@@ -324,8 +341,28 @@ report at <a class="reference external" href="https://github.com/PanoPepino/bean
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Beanim Documentation</a><ul>
+<li><a class="reference internal" href="#example-presentation">Example Presentation</a></li>
+<li><a class="reference internal" href="#getting-started">Getting Started</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

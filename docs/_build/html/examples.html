@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Reference Documentation" href="api/modules.html" /><link rel="prev" title="Installation" href="installation.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Beanim Documentation" href="api/modules.html" /><link rel="prev" title="Installation" href="installation.html" />
         <link rel="canonical" href="https://panopepino.github.io/beanim/examples.html" />
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
@@ -179,7 +179,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -206,11 +206,11 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Quick Guide</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="api/modules.html">Reference Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Reference Documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="api/modules.html">Beanim Documentation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Beanim Documentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/manim_beanim.text_and_organisation.html">text_and_organisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/manim_beanim.graphing_objects.html">graphing_objects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/manim_beanim.other_objects.html">other_objects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/manim_beanim.templates.html">templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api/manim_beanim.text_and_organisation.html">text_and_organisation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/manim_beanim.tools.html">tools</a></li>
 </ul>
 </li>
@@ -248,7 +248,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -256,146 +256,231 @@
         <article role="main" id="furo-main-content">
           <section id="quick-guide">
 <h1>Quick Guide<a class="headerlink" href="#quick-guide" title="Link to this heading">¶</a></h1>
-<p>This package comes equipped with different templates to homogenise the look of the slides.</p>
+<p>This guide will walk you through creating a simple presentation with Beanim. By the end, you’ll understand how to use templates, define slide objects, and create an animated presentation.</p>
+<section id="available-templates">
+<h2>Available Templates<a class="headerlink" href="#available-templates" title="Link to this heading">¶</a></h2>
+<p>Beanim comes equipped with six different templates to homogenise the look of your slides:</p>
 <ul class="simple">
-<li><p>default_template</p></li>
-<li><p>blue_ice</p></li>
-<li><p>red_autumn</p></li>
-<li><p>green_mint</p></li>
-<li><p>beamer_green</p></li>
-<li><p>beamer_blue</p></li>
+<li><p>🎨 <strong>default_template</strong> - Clean and minimalist design</p></li>
+<li><p>🧊 <strong>blue_ice</strong> - Cool blue color scheme</p></li>
+<li><p>🍂 <strong>red_autumn</strong> - Warm autumn colors</p></li>
+<li><p>🌿 <strong>green_mint</strong> - Fresh mint green theme</p></li>
+<li><p>🟢 <strong>beamer_green</strong> - Classic Beamer style in green</p></li>
+<li><p>🔵 <strong>beamer_blue</strong> - Classic Beamer style in blue</p></li>
 </ul>
-<table style="width:100%; table-layout: fixed;">
-  <tr>
-    <td><img src="_static/media/images/TST_dt.png" style="width:100%;"/></td>
-    <td><img src="_static/media/images/GST_dt.png" style="width:100%;"/></td>
-  </tr>
-  <tr>
-    <td><img src="_static/media/images/TST_ba.png" style="width:100%;"/></td>
-    <td><img src="_static/media/images/GST_ba.png" style="width:100%;"/></td>
-  </tr><tr>
-    <td><img src="_static/media/images/TST_fa.png" style="width:100%;"/></td>
-    <td><img src="_static/media/images/GST_fa.png" style="width:100%;"/></td>
-  </tr><tr>
-    <td><img src="_static/media/images/TST_fm.png" style="width:100%;"/></td>
-    <td><img src="_static/media/images/GST_fm.png" style="width:100%;"/></td>
-  </tr>
-  <tr>
-    <td><img src="_static/media/images/TST_bb.png" style="width:100%;"/></td>
-    <td><img src="_static/media/images/GST_bb.png" style="width:100%;"/></td>
-  </tr>
-</table><p>These templates can be called by importing them at the preamble of the file.py to compile with manim-slides as:</p>
+<section id="template-gallery">
+<h3>Template Gallery<a class="headerlink" href="#template-gallery" title="Link to this heading">¶</a></h3>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
+    <img src="_static/media/images/TST_dt.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
+    <img src="_static/media/images/GST_dt.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
+
+    <img src="_static/media/images/TST_ba.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
+    <img src="_static/media/images/GST_ba.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
+
+    <img src="_static/media/images/TST_fa.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
+    <img src="_static/media/images/GST_fa.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
+
+    <img src="_static/media/images/TST_fm.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
+    <img src="_static/media/images/GST_fm.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
+
+    <img src="_static/media/images/TST_bb.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
+    <img src="_static/media/images/GST_bb.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
+</div></section>
+</section>
+<section id="step-1-import-and-setup">
+<h2>Step 1: Import and Setup<a class="headerlink" href="#step-1-import-and-setup" title="Link to this heading">¶</a></h2>
+<p>These templates can be called by importing them at the preamble of your <code class="docutils literal notranslate"><span class="pre">file.py</span></code> to compile with <code class="docutils literal notranslate"><span class="pre">manim-slides</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">manim</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">manim</span><span class="o">-</span><span class="n">slides</span> <span class="kn">import</span><span class="w"> </span><span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">manim_slides</span><span class="w"> </span><span class="kn">import</span> <span class="n">Slide</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">manim_beanim</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Choose your template</span>
 <span class="n">import_template</span><span class="p">(</span><span class="s1">&#39;default_template&#39;</span><span class="p">)</span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">Your_Fancy_Presentation</span><span class="p">(</span><span class="n">Slides</span><span class="p">):</span>
-    <span class="o">....</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Your_Fancy_Presentation</span><span class="p">(</span><span class="n">Slide</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Your presentation code here</span>
+        <span class="k">pass</span>
 </pre></div>
 </div>
-<p>Then, let us build our presentation. We will first define the characters of the presentation (the <a class="reference external" href="https://github.com/PanoPepino/manim_beanim/issues">objects</a>. we are going to use through the slides). After this, one can include the script of the slides with the commands provided in <a class="reference external" href="https://manim-slides.eertmans.be/latest/quickstart.html">Manim-Slides</a>. Alternatively, you can define all the objects in a file.py and import all them into the script.py to run with Manim-Slides.</p>
+</section>
+<hr class="docutils" />
+<section id="step-2-define-your-slide-objects">
+<h2>Step 2: Define Your Slide Objects<a class="headerlink" href="#step-2-define-your-slide-objects" title="Link to this heading">¶</a></h2>
+<p>Before building the presentation script, define all the objects (title slides, bullet points, equations, references) you’ll use. This makes your code more organized and easier to maintain.</p>
+<p><strong>Available Basic Object Types:</strong></p>
+<ul class="simple">
+<li><p><strong>Title_Presentation()</strong> - Title slide with project name, affiliation, and author</p></li>
+<li><p><strong>Title_Section()</strong> - Section header that appears at the top-left corner</p></li>
+<li><p><strong>BlB()</strong> - Bulleted List Boxed with iterative animation support</p></li>
+<li><p><strong>Reference()</strong> - Citations and references (manual or from .bib file)</p></li>
+<li><p><strong>Equation()</strong> - LaTeX equations (manual or extracted from .tex file)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can define all objects in a separate <code class="docutils literal notranslate"><span class="pre">objects.py</span></code> file and import them into your main script for better organization.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="step-3-build-your-presentation">
+<h2>Step 3: Build Your Presentation<a class="headerlink" href="#step-3-build-your-presentation" title="Link to this heading">¶</a></h2>
+<p>Here’s a complete example showing how to create a simple presentation:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">manim</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">manim</span><span class="o">-</span><span class="n">slides</span> <span class="kn">import</span><span class="w"> </span><span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">manim_slides</span><span class="w"> </span><span class="kn">import</span> <span class="n">Slide</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">manim_beanim</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 
 <span class="n">import_template</span><span class="p">(</span><span class="s1">&#39;default_template&#39;</span><span class="p">)</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">Quick_Presentation</span><span class="p">(</span><span class="n">Slide</span><span class="p">):</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 
-    <span class="c1"># Objects definition</span>
-    <span class="n">title_slide</span> <span class="o">=</span> <span class="n">Title_Presentation</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="p">[</span><span class="n">title_of_project</span><span class="p">,</span> <span class="n">affiliation</span><span class="p">,</span> <span class="n">author</span><span class="p">])</span>
-    <span class="n">slide_0_points</span> <span class="o">=</span> <span class="n">BlB</span><span class="p">(</span><span class="n">the_title</span><span class="o">=</span><span class="s2">&quot;About previous slide&quot;</span><span class="p">,</span>
-                         <span class="n">content</span><span class="o">=</span><span class="p">[</span>
-                             <span class="s2">&quot;Previous slide contained the Title of the Presentation&quot;</span><span class="p">,</span>
-                             <span class="s2">&quot;You call it with Title</span><span class="se">\\</span><span class="s2">_Presentation() class&quot;</span><span class="p">,</span>
-                             <span class="s2">&quot;It has 3 entries: title of slides, your affiliation, your name&quot;</span>
-                         <span class="p">])</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
+        <span class="c1"># ============================================</span>
+        <span class="c1"># SLIDE OBJECTS DEFINITION</span>
+        <span class="c1"># ============================================</span>
 
-    <span class="n">slide_1_title</span> <span class="o">=</span> <span class="n">Title_Section</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;This a Title</span><span class="se">\\</span><span class="s2">_Section to Show&quot;</span><span class="p">)</span>
-    <span class="n">slide_1_points_1</span> <span class="o">=</span> <span class="n">BlB</span><span class="p">(</span>
-        <span class="n">content</span><span class="o">=</span><span class="p">[</span>
-            <span class="s2">&quot;What you see upstairs is a Title</span><span class="se">\\</span><span class="s2">_Section()&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;It is defined so that it will always be placed to the UL corner&quot;</span>
-        <span class="p">])</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
-    <span class="n">slide_1_points_2</span> <span class="o">=</span> <span class="n">BlB</span><span class="p">(</span>
-        <span class="n">content</span><span class="o">=</span><span class="p">[</span>
-            <span class="s2">&quot;This is Bulleted list boxed&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Its class is BlB()&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Use its inbuilt function .next</span><span class="se">\\</span><span class="s2">_point() to iterate over points&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;... And for the last point you can recover all points in the initial color&quot;</span><span class="p">,</span>
-        <span class="p">])</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
+        <span class="c1"># Title slide</span>
+        <span class="n">title_slide</span> <span class="o">=</span> <span class="n">Title_Presentation</span><span class="p">(</span>
+            <span class="n">content</span><span class="o">=</span><span class="p">[</span>
+                <span class="s2">&quot;My Amazing Presentation&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;University Name&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Your Name&quot;</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
 
-    <span class="n">ref_1</span> <span class="o">=</span> <span class="n">Reference</span><span class="p">(</span><span class="n">dictionary</span><span class="o">=</span><span class="s2">&quot;example_extract_ref_equation/dictionaries_extracted/refs.txt&quot;</span><span class="p">,</span>
-                      <span class="n">content</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;ref_extract_1&#39;</span><span class="p">,</span> <span class="s1">&#39;ref_extract_2&#39;</span><span class="p">])</span>
-    <span class="n">ref_2</span> <span class="o">=</span> <span class="n">Reference</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s1">&#39;[Manually input ref, 2025]&#39;</span><span class="p">)</span>
-    <span class="n">refs</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">ref_1</span><span class="p">,</span> <span class="n">ref_2</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span> <span class="n">aligned_edge</span><span class="o">=</span><span class="n">LEFT</span><span class="p">)</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">UR</span><span class="p">)</span>
-    <span class="n">slide_2_points_1</span> <span class="o">=</span> <span class="n">BlB</span><span class="p">(</span>
-        <span class="n">content</span><span class="o">=</span><span class="p">[</span>
-            <span class="s2">&quot;This is a reference/citation&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Its class is Reference()&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;You can manually input your references...&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;... Or you can extract references from a .bib file and call them from a dictionary&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Check documentation/tools for more information on this&quot;</span>
-        <span class="p">])</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+        <span class="c1"># Slide about the title slide structure</span>
+        <span class="n">slide_0_points</span> <span class="o">=</span> <span class="n">BlB</span><span class="p">(</span>
+            <span class="n">the_title</span><span class="o">=</span><span class="s2">&quot;About Previous Slide&quot;</span><span class="p">,</span>
+            <span class="n">content</span><span class="o">=</span><span class="p">[</span>
+                <span class="s2">&quot;Previous slide contained the Title of the Presentation&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;You call it with Title_Presentation() class&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;It has 3 entries: title, affiliation, author name&quot;</span>
+            <span class="p">]</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
 
-    <span class="n">eq_1</span> <span class="o">=</span> <span class="n">Equation</span><span class="p">(</span>
-        <span class="n">content</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;x^</span><span class="si">{2}</span><span class="s2">+y^</span><span class="si">{2}</span><span class="s2"> = R^</span><span class="si">{2}</span><span class="s2">, \quad&quot;</span><span class="p">,</span> <span class="s2">&quot;e^{i \pi} = -1&quot;</span><span class="p">],</span>
-        <span class="n">text_size</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
-        <span class="n">direction</span><span class="o">=</span><span class="n">DOWN</span><span class="p">,</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
-    <span class="n">eq_2</span> <span class="o">=</span> <span class="n">Equation</span><span class="p">(</span>
-        <span class="n">dictionary</span><span class="o">=</span><span class="s2">&quot;example_extract_ref_equation/dictionaries_extracted/equations.txt&quot;</span><span class="p">,</span>
-        <span class="n">content</span><span class="o">=</span><span class="s2">&quot;equation_extract_2&quot;</span><span class="p">,</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
-    <span class="n">slide_3_points_1</span> <span class="o">=</span> <span class="n">BlB</span><span class="p">(</span>
-        <span class="n">content</span><span class="o">=</span><span class="p">[</span>
-            <span class="s2">&quot;This is a equation&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Its class is Equation()&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;You can manually input your equations...&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;... Or you can extract equations from a .tex file and call them from a dictionary&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Check documentation/tools for more information on this&quot;</span>
-        <span class="p">])</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
+        <span class="c1"># Slide about sections and bullet lists</span>
+        <span class="n">slide_1_title</span> <span class="o">=</span> <span class="n">Title_Section</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s2">&quot;Using Title Sections&quot;</span><span class="p">)</span>
+        <span class="n">slide_1_points_1</span> <span class="o">=</span> <span class="n">BlB</span><span class="p">(</span>
+            <span class="n">content</span><span class="o">=</span><span class="p">[</span>
+                <span class="s2">&quot;What you see above is a Title_Section()&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;It is automatically placed in the upper-left corner&quot;</span>
+            <span class="p">]</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
 
-    <span class="c1"># Slide Manipulation</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeIn</span><span class="p">(</span><span class="n">title_slide</span><span class="p">))</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">(</span><span class="n">notes</span><span class="o">=</span><span class="s1">&#39;to slide about title&#39;</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">wipe</span><span class="p">(</span><span class="n">title_slide</span><span class="p">,</span> <span class="n">slide_0_points</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">slide_0_points</span><span class="p">)</span> <span class="o">+</span> <span class="mi">3</span><span class="p">):</span>
+        <span class="n">slide_1_points_2</span> <span class="o">=</span> <span class="n">BlB</span><span class="p">(</span>
+            <span class="n">content</span><span class="o">=</span><span class="p">[</span>
+                <span class="s2">&quot;This is a Bulleted List Boxed (BlB)&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Use .next_point() to iterate over bullet points&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Each point appears with an animation&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Perfect for step-by-step explanations!&quot;</span>
+            <span class="p">]</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span>
+
+        <span class="c1"># Slide about references</span>
+        <span class="n">ref_1</span> <span class="o">=</span> <span class="n">Reference</span><span class="p">(</span>
+            <span class="n">dictionary</span><span class="o">=</span><span class="s2">&quot;path/to/refs.txt&quot;</span><span class="p">,</span>
+            <span class="n">content</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;ref_key_1&#39;</span><span class="p">,</span> <span class="s1">&#39;ref_key_2&#39;</span><span class="p">]</span>
+        <span class="p">)</span>
+        <span class="n">ref_2</span> <span class="o">=</span> <span class="n">Reference</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="s1">&#39;[Manually Input Reference, 2025]&#39;</span><span class="p">)</span>
+        <span class="n">refs</span> <span class="o">=</span> <span class="n">VGroup</span><span class="p">(</span><span class="n">ref_1</span><span class="p">,</span> <span class="n">ref_2</span><span class="p">)</span><span class="o">.</span><span class="n">arrange</span><span class="p">(</span><span class="n">DOWN</span><span class="p">,</span> <span class="n">aligned_edge</span><span class="o">=</span><span class="n">LEFT</span><span class="p">)</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">UR</span><span class="p">)</span>
+
+        <span class="n">slide_2_points_1</span> <span class="o">=</span> <span class="n">BlB</span><span class="p">(</span>
+            <span class="n">content</span><span class="o">=</span><span class="p">[</span>
+                <span class="s2">&quot;This demonstrates references/citations&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Use the Reference() class&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Option 1: Manually input references&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Option 2: Extract from .bib file using dictionaries&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;See documentation/tools for extraction details&quot;</span>
+            <span class="p">]</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">LEFT</span><span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+
+        <span class="c1"># Slide about equations</span>
+        <span class="n">eq_1</span> <span class="o">=</span> <span class="n">Equation</span><span class="p">(</span>
+            <span class="n">content</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;x^</span><span class="si">{2}</span><span class="s2">+y^</span><span class="si">{2}</span><span class="s2"> = R^</span><span class="si">{2}</span><span class="s2">, \quad&quot;</span><span class="p">,</span> <span class="s2">&quot;e^{i </span><span class="se">\\</span><span class="s2">pi} = -1&quot;</span><span class="p">],</span>
+            <span class="n">text_size</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+            <span class="n">direction</span><span class="o">=</span><span class="n">DOWN</span><span class="p">,</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+
+        <span class="n">eq_2</span> <span class="o">=</span> <span class="n">Equation</span><span class="p">(</span>
+            <span class="n">dictionary</span><span class="o">=</span><span class="s2">&quot;path/to/equations.txt&quot;</span><span class="p">,</span>
+            <span class="n">content</span><span class="o">=</span><span class="s2">&quot;equation_key&quot;</span><span class="p">,</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">UP</span><span class="p">)</span>
+
+        <span class="n">slide_3_points_1</span> <span class="o">=</span> <span class="n">BlB</span><span class="p">(</span>
+            <span class="n">content</span><span class="o">=</span><span class="p">[</span>
+                <span class="s2">&quot;This demonstrates equation handling&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Use the Equation() class&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Option 1: Manually input LaTeX equations&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Option 2: Extract from .tex file using dictionaries&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;See documentation/tools for extraction details&quot;</span>
+            <span class="p">]</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">to_corner</span><span class="p">(</span><span class="n">DOWN</span><span class="p">)</span>
+
+        <span class="c1"># ============================================</span>
+        <span class="c1"># SLIDE ANIMATION SCRIPT</span>
+        <span class="c1"># ============================================</span>
+
+        <span class="c1"># Slide 0: Title</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeIn</span><span class="p">(</span><span class="n">title_slide</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">(</span><span class="n">notes</span><span class="o">=</span><span class="s1">&#39;Introduction to title slide structure&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Slide 1: Explain title slide</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wipe</span><span class="p">(</span><span class="n">title_slide</span><span class="p">,</span> <span class="n">slide_0_points</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">slide_0_points</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">slide_0_points</span><span class="o">.</span><span class="n">next_point</span><span class="p">())</span>
+
+        <span class="c1"># Slide 2: Section titles and bullet lists</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">(</span><span class="n">notes</span><span class="o">=</span><span class="s1">&#39;Demonstrate section titles and bullet lists&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wipe</span><span class="p">(</span><span class="n">slide_0_points</span><span class="p">,</span> <span class="n">slide_1_title</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeIn</span><span class="p">(</span><span class="n">slide_1_points_1</span><span class="p">))</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">slide_0_points</span><span class="o">.</span><span class="n">next_point</span><span class="p">())</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">(</span><span class="n">notes</span><span class="o">=</span><span class="s1">&#39;to slide about section and bulleted list&#39;</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">wipe</span><span class="p">(</span><span class="n">slide_0_points</span><span class="p">,</span> <span class="n">slide_1_title</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeIn</span><span class="p">(</span><span class="n">slide_1_points_1</span><span class="p">))</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">slide_1_points_1</span><span class="p">,</span> <span class="n">slide_1_points_2</span><span class="p">))</span>
-    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">slide_1_points_2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">3</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">slide_1_points_1</span><span class="p">,</span> <span class="n">slide_1_points_2</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">slide_1_points_2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">slide_1_points_2</span><span class="o">.</span><span class="n">next_point</span><span class="p">())</span>
+
+        <span class="c1"># Slide 3: References</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">(</span><span class="n">notes</span><span class="o">=</span><span class="s1">&#39;Show how to add references&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wipe</span><span class="p">(</span><span class="n">Group</span><span class="p">(</span><span class="n">slide_1_title</span><span class="p">,</span> <span class="n">slide_1_points_2</span><span class="p">),</span> <span class="n">refs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">slide_2_points_1</span><span class="p">))</span>
+
+        <span class="c1"># Slide 4: Equations</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">(</span><span class="n">notes</span><span class="o">=</span><span class="s1">&#39;Demonstrate equation handling&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wipe</span><span class="p">(</span><span class="n">Group</span><span class="p">(</span><span class="n">slide_2_points_1</span><span class="p">,</span> <span class="n">refs</span><span class="p">),</span> <span class="n">Group</span><span class="p">(</span><span class="n">eq_1</span><span class="p">,</span> <span class="n">slide_3_points_1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">slide_3_points_1</span><span class="p">)):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">slide_3_points_1</span><span class="o">.</span><span class="n">next_point</span><span class="p">())</span>
+
         <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">slide_1_points_2</span><span class="o">.</span><span class="n">next_point</span><span class="p">())</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">(</span><span class="n">notes</span><span class="o">=</span><span class="s1">&#39;to slide about refs&#39;</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">wipe</span><span class="p">(</span><span class="n">Group</span><span class="p">(</span><span class="n">slide_1_title</span><span class="p">,</span> <span class="n">slide_1_points_2</span><span class="p">),</span> <span class="n">refs</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">slide_2_points_1</span><span class="p">))</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">(</span><span class="n">notes</span><span class="o">=</span><span class="s1">&#39;to slide about equations&#39;</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">wipe</span><span class="p">(</span><span class="n">Group</span><span class="p">(</span><span class="n">slide_2_points_1</span><span class="p">,</span> <span class="n">refs</span><span class="p">),</span> <span class="n">Group</span><span class="p">(</span><span class="n">eq_1</span><span class="p">,</span> <span class="n">slide_3_points_1</span><span class="p">))</span>
-    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">slide_3_points_1</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">eq_1</span><span class="p">,</span> <span class="n">eq_2</span><span class="p">))</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">slide_3_points_1</span><span class="o">.</span><span class="n">next_point</span><span class="p">())</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">()</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">ReplacementTransform</span><span class="p">(</span><span class="n">eq_1</span><span class="p">,</span> <span class="n">eq_2</span><span class="p">))</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">slide_3_points_1</span><span class="o">.</span><span class="n">next_point</span><span class="p">())</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">(</span><span class="n">notes</span><span class="o">=</span><span class="s1">&#39;to end&#39;</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeOut</span><span class="p">(</span><span class="n">slide_3_points_1</span><span class="p">,</span> <span class="n">eq_2</span><span class="p">))</span>
+
+        <span class="c1"># End</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">next_slide</span><span class="p">(</span><span class="n">notes</span><span class="o">=</span><span class="s1">&#39;End of presentation&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">FadeOut</span><span class="p">(</span><span class="n">slide_3_points_1</span><span class="p">,</span> <span class="n">eq_2</span><span class="p">))</span>
 </pre></div>
 </div>
-<p>We then render the slides with:</p>
+</section>
+<hr class="docutils" />
+<section id="step-4-render-your-presentation">
+<h2>Step 4: Render Your Presentation<a class="headerlink" href="#step-4-render-your-presentation" title="Link to this heading">¶</a></h2>
+<p>Render the slides using the <code class="docutils literal notranslate"><span class="pre">manim-slides</span></code> command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>manim-slides<span class="w"> </span>render<span class="w"> </span>example.py<span class="w"> </span>Quick_Presentation
 </pre></div>
 </div>
-<p>The final result of this quick guide is:</p>
-<div style="position:relative;padding-bottom:56.25%;">
+<p>After rendering, you can present your slides with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>manim-slides<span class="w"> </span>present<span class="w"> </span>Quick_Presentation
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="final-result">
+<h2>Final Result<a class="headerlink" href="#final-result" title="Link to this heading">¶</a></h2>
+<p>Here’s what the final presentation looks like:</p>
+<div style="position:relative; padding-bottom:56.25%; margin: 20px 0;">
     <iframe
         loading="lazy"
-        style="width:100%;height:100%;position:absolute;left:0px;top:0px;"
+        style="width:100%; height:100%; position:absolute; left:0px; top:0px; border: 2px solid #000000ff; border-radius: 8px;"
         frameborder="0"
         width="100%"
         height="100%"
@@ -404,6 +489,21 @@
         src="https://panopepino.github.io/web_page/main_page/presentations/2025_09_docs/GP.html">
     </iframe>
 </div></section>
+<hr class="docutils" />
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">¶</a></h2>
+<p>Now that you’ve created your first presentation with Beanim, explore more advanced features:</p>
+<ul class="simple">
+<li><p>🔧 Learn about extracting equations and references from files in the <a class="reference internal" href="api/modules.html"><span class="doc">Beanim Documentation</span></a> section</p></li>
+<li><p>🎨 Experiment with different templates and customize your slides</p></li>
+<li><p>💡 Visit the <a class="reference external" href="https://manim-slides.eertmans.be/latest/quickstart.html">Manim-Slides documentation</a> for additional animation techniques</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Pro tip:</strong> Start simple and gradually add complexity. Define all your objects first, then build the animation script step by step.</p>
+</div>
+</section>
+</section>
 
         </article>
       </div>
@@ -415,7 +515,7 @@
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Reference Documentation</div>
+                <div class="title">Beanim Documentation</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -448,8 +548,36 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Quick Guide</a><ul>
+<li><a class="reference internal" href="#available-templates">Available Templates</a><ul>
+<li><a class="reference internal" href="#template-gallery">Template Gallery</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#step-1-import-and-setup">Step 1: Import and Setup</a></li>
+<li><a class="reference internal" href="#step-2-define-your-slide-objects">Step 2: Define Your Slide Objects</a></li>
+<li><a class="reference internal" href="#step-3-build-your-presentation">Step 3: Build Your Presentation</a></li>
+<li><a class="reference internal" href="#step-4-render-your-presentation">Step 4: Render Your Presentation</a></li>
+<li><a class="reference internal" href="#final-result">Final Result</a></li>
+<li><a class="reference internal" href="#next-steps">Next Steps</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
