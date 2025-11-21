@@ -1,4 +1,4 @@
-Beanim Documentation
+Documentation
 ============
 
 .. toctree::
