@@ -6,36 +6,145 @@ This guide will walk you through creating a simple presentation with Beanim. By 
 Available Templates
 -------------------
 
-Beanim comes equipped with six different templates to homogenise the look of your slides:
+Beanim comes equipped with eight different templates to homogenise the look of your slides:
 
 * 🎨 **default_template** - Clean and minimalist design
+* 🌿 **green_mint** - Fresh mint green theme
 * 🧊 **blue_ice** - Cool blue color scheme
 * 🍂 **red_autumn** - Warm autumn colors
-* 🌿 **green_mint** - Fresh mint green theme
-* 🟢 **beamer_green** - Classic Beamer style in green
 * 🔵 **beamer_blue** - Classic Beamer style in blue
+* 🟢 **beamer_green** - Classic Beamer style in green
+* 🌌 **quantum_dusk** - Elegant purple-lavender theme
+* ⚫ **dark_energy** - Dark theme with bright cyan accents
 
 Template Gallery
 ^^^^^^^^^^^^^^^^
 
 .. raw:: html
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
-        <img src="_static/media/images/TST_dt.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
-        <img src="_static/media/images/GST_dt.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
-        
-        <img src="_static/media/images/TST_ba.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
-        <img src="_static/media/images/GST_ba.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
-        
-        <img src="_static/media/images/TST_fa.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
-        <img src="_static/media/images/GST_fa.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
-        
-        <img src="_static/media/images/TST_fm.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
-        <img src="_static/media/images/GST_fm.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
-        
-        <img src="_static/media/images/TST_bb.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
-        <img src="_static/media/images/GST_bb.png" style="width:100%; border: 2px solid #000000ff; border-radius: 8px;"/>
-    </div>
+   <div style="margin: 20px 0;">
+
+     <!-- default_template -->
+     <div style="margin-bottom: 40px;">
+       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🎨 default_template</h3>
+       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Title_Slide_Test_default_template.png" alt="default_template title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Generic_Slide_Test_default_template.png" alt="default_template generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+       </div>
+     </div>
+
+     <!-- green_mint -->
+     <div style="margin-bottom: 40px;">
+       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🌿 green_mint</h3>
+       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Title_Slide_Test_green_mint.png" alt="green_mint title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Generic_Slide_Test_green_mint.png" alt="green_mint generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+       </div>
+     </div>
+
+     <!-- blue_ice -->
+     <div style="margin-bottom: 40px;">
+       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🧊 blue_ice</h3>
+       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Title_Slide_Test_blue_ice.png" alt="blue_ice title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Generic_Slide_Test_blue_ice.png" alt="blue_ice generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+       </div>
+     </div>
+
+     <!-- red_autumn -->
+     <div style="margin-bottom: 40px;">
+       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🍂 red_autumn</h3>
+       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Title_Slide_Test_red_autumn.png" alt="red_autumn title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Generic_Slide_Test_red_autumn.png" alt="red_autumn generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+       </div>
+     </div>
+
+     <!-- beamer_blue -->
+     <div style="margin-bottom: 40px;">
+       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🔵 beamer_blue</h3>
+       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Title_Slide_Test_beamer_blue.png" alt="beamer_blue title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Generic_Slide_Test_beamer_blue.png" alt="beamer_blue generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+       </div>
+     </div>
+
+     <!-- beamer_green -->
+     <div style="margin-bottom: 40px;">
+       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🟢 beamer_green</h3>
+       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Title_Slide_Test_beamer_green.png" alt="beamer_green title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Generic_Slide_Test_beamer_green.png" alt="beamer_green generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+       </div>
+     </div>
+
+     <!-- quantum_dusk -->
+     <div style="margin-bottom: 40px;">
+       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🌌 quantum_dusk</h3>
+       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Title_Slide_Test_quantum_dusk.png" alt="quantum_dusk title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Generic_Slide_Test_quantum_dusk.png" alt="quantum_dusk generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+       </div>
+     </div>
+
+     <!-- dark_energy -->
+     <div style="margin-bottom: 40px;">
+       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">⚫ dark_energy</h3>
+       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Title_Slide_Test_dark_energy.png" alt="dark_energy title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+         <div style="text-align: center;">
+           <p style="font-weight: bold; margin-bottom: 8px;"></p>
+           <img src="_static/media/images/Generic_Slide_Test_dark_energy.png" alt="dark_energy generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+         </div>
+       </div>
+     </div>
+
+   </div>
 
 
 Step 1: Import and Setup
@@ -50,7 +159,7 @@ These templates can be called by importing them at the preamble of your ``file.p
     from manim_beanim import * 
     
     # Choose your template
-    import_template('default_template')
+    import_template_beanim('default_template')
 
     class Your_Fancy_Presentation(Slide):
         def construct(self):
@@ -63,11 +172,11 @@ These templates can be called by importing them at the preamble of your ``file.p
 Step 2: Define Your Slide Objects
 ----------------------------------
 
-Before building the presentation script, define all the objects (title slides, bullet points, equations, references) you'll use. This makes your code more organized and easier to maintain.
+Before building the presentation script, define all the objects (s, bullet points, equations, references) you'll use. This makes your code more organized and easier to maintain.
 
 **Available Basic Object Types:**
 
-* **Title_Presentation()** - Title slide with project name, affiliation, and author
+* **Title_Presentation()** -  with project name, affiliation, and author
 * **Title_Section()** - Section header that appears at the top-left corner
 * **BlB()** - Bulleted List Boxed with iterative animation support
 * **Reference()** - Citations and references (manual or from .bib file)
@@ -89,7 +198,7 @@ Here's a complete example showing how to create a simple presentation:
     from manim_slides import Slide
     from manim_beanim import *
 
-    import_template('default_template')
+    import_template_beanim('default_template')
 
     class Generic_Presentation(Slide):
     def construct(self):
@@ -168,7 +277,7 @@ Here's a complete example showing how to create a simple presentation:
         # SLIDE OBJECTS DEFINITION
         # ============================================
 
-        # Title slide
+        # 
         self.play(FadeIn(title_slide))
         self.next_slide(notes='to slide about title')
         self.wipe(title_slide, slide_0_points)

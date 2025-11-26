@@ -15,7 +15,7 @@
 
 ## 📖 About Beanim
 
-This repository contains v2.1 of **beanim** (Beamer + Manim) libraries. This package aims to offer a similar experience to that of Beamer in LaTeX, by offering familiar properties in Manim + ManimSlides to the slides created by Beamer.
+This repository contains v2.2 of **beanim** (Beamer + Manim) libraries. This package aims to offer a similar experience to that of Beamer in LaTeX, by offering familiar properties in Manim + ManimSlides to the slides created by Beamer.
 
 While the package is currently quite limited, the idea is to improve and expand through collaboration with other people interested in enhancing the package.
 
@@ -41,34 +41,23 @@ Here's a complete presentation created with Beanim demonstrating all the main fe
 
 ## Examples
 
-Here you can find an overview of the current templates and how almost all objects look like in each template. New templates will be added in the incoming versions.
+Here you can find an overview of the current templates and how almost all objects look like in each template.
 
-### Title Slide Templates
-
-<div align="center">
-  <img src="docs/_static/media/images/TST_dt.png" width="18%" style="border-radius: 8px; margin: 5px;"/>
-  <img src="docs/_static/media/images/TST_fm.png" width="18%" style="border-radius: 8px; margin: 5px;"/>
-  <img src="docs/_static/media/images/TST_fa.png" width="18%" style="border-radius: 8px; margin: 5px;"/>
-  <img src="docs/_static/media/images/TST_ba.png" width="18%" style="border-radius: 8px; margin: 5px;"/>
-  <img src="docs/_static/media/images/TST_bb.png" width="18%" style="border-radius: 8px; margin: 5px;"/>
-</div>
+### 🎨 Template Gallery
 
 <div align="center">
-  <sub><b>Default</b> • <b>Fancy Mint</b> • <b>Fire Autumn</b> • <b>Blue Ice</b> • <b>Beamer Like</b></sub>
-</div>
 
-### Generic Slide Templates
+| Template | Title Slide | Generic Slide |
+|:--------:|:-----------:|:-------------:|
+| 🎨 **default_template** | <img src="docs/_static/media/images/Title_Slide_Test_default_template.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_default_template.png" width="200"/> |
+| 🌿 **green_mint** | <img src="docs/_static/media/images/Title_Slide_Test_green_mint.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_green_mint.png" width="200"/> |
+| 🧊 **blue_ice** | <img src="docs/_static/media/images/Title_Slide_Test_blue_ice.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_blue_ice.png" width="200"/> |
+| 🍂 **red_autumn** | <img src="docs/_static/media/images/Title_Slide_Test_red_autumn.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_red_autumn.png" width="200"/> |
+| 🔵 **beamer_blue** | <img src="docs/_static/media/images/Title_Slide_Test_beamer_blue.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_beamer_blue.png" width="200"/> |
+| 🟢 **beamer_green** | <img src="docs/_static/media/images/Title_Slide_Test_beamer_green.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_beamer_green.png" width="200"/> |
+| 🌌 **quantum_dusk** | <img src="docs/_static/media/images/Title_Slide_Test_quantum_dusk.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_quantum_dusk.png" width="200"/> |
+| ⚫ **dark_energy** | <img src="docs/_static/media/images/Title_Slide_Test_dark_energy.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_dark_energy.png" width="200"/> |
 
-<div align="center">
-  <img src="docs/_static/media/images/GST_dt.png" width="18%" style="border-radius: 8px; margin: 5px;"/>
-  <img src="docs/_static/media/images/GST_fm.png" width="18%" style="border-radius: 8px; margin: 5px;"/>
-  <img src="docs/_static/media/images/GST_fa.png" width="18%" style="border-radius: 8px; margin: 5px;"/>
-  <img src="docs/_static/media/images/GST_ba.png" width="18%" style="border-radius: 8px; margin: 5px;"/>
-  <img src="docs/_static/media/images/GST_bb.png" width="18%" style="border-radius: 8px; margin: 5px;"/>
-</div>
-
-<div align="center">
-  <sub><b>Default</b> • <b>Fancy Mint</b> • <b>Fire Autumn</b> • <b>Blue Ice</b> • <b>Beamer Like</b></sub>
 </div>
 
 
@@ -101,7 +90,7 @@ The following features are planned for future versions:
 - 🎨 **Multiple Templates**: More templates.
 - 📊 **Plot Support**: Generic plot creation with data input (in development).
 - 🔢 **Equation Handling**: Refer to your equations as you do in your LaTeX articles (i.e. \ref{your_label})
-- ✨ **Animation Methods**: Sliding titles, delayed backgrounds, and more...
+- ✨ **Animation Methods**: Sliding titles, delayed backgrounds, and more..
 - 🎯 **Beamer-like Experience**: More Beamer like features to come.
 
 ## 💖 Support My Work
@@ -115,7 +104,14 @@ If you find this project helpful, consider supporting its development. Thank you
 </p>
 
 
+<!--
+---Log of changes---
 
+2025/11/26: - Changed import_template to import_template_beanim
+            - Added 2 new templates inspired by AI
+            - Modified README and examples.rst to accomodate changes.
+
+>
 
 
 <!-- ## TO DO
@@ -132,4 +128,4 @@ If you find this project helpful, consider supporting its development. Thank you
 - More templates. Always more templates. [_]
 - Extra features to Title_Section and similar (underbar, different color for first Capital letter, etc.) [_]
 - Extra animation methods (Sliding Title_Section + delayed background, etc..) [_]
--->
+>

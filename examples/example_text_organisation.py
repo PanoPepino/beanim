@@ -1,7 +1,7 @@
 from manim import *
 from manim_beanim import *
 
-import_template('beamer_green')
+import_template_beanim('blue_ice')
 
 
 class Title_Slide_Test(Scene):
@@ -40,7 +40,10 @@ class BlB_Test(Scene):
 class Ref_Test(Scene):
     def construct(self):
         ref_from_data_base = Reference(
-            content=['ref_data_base_1', 'ref_data_base_2', 'ref_data_base_3'], dictionary='data_base')
+            content=['ref_data_base_1',
+                     'ref_data_base_2',
+                     'ref_data_base_3'],
+            dictionary='data_base')
         ref_from_extract = Reference(dictionary="example_extract_ref_equation/dictionaries_extracted/refs.txt",
                                      content=['ref_extract_1', 'ref_extract_2'])
         ref_from_extract_2 = Reference(
@@ -54,14 +57,16 @@ class Ref_Test(Scene):
 class Equation_Test(Scene):
     def construct(self):
         eq_from_data_base = Equation(
-            content=["equation_data_base_1", "equation_data_base_3"],
+            content=["equation_data_base_1",
+                     "equation_data_base_3"],
             dictionary="data_base",
             text_size=30,
             direction=DOWN,
             aligned_direction=LEFT
         )
         eq_from_extract = Equation(
-            content=["equation_extract_1", "equation_extract_3"],
+            content=["equation_extract_1",
+                     "equation_extract_3"],
             dictionary="example_extract_ref_equation/dictionaries_extracted/equations.txt",
             text_size=30,
             direction=DOWN,
@@ -79,7 +84,8 @@ class Generic_Slide_Test(Scene):
     def construct(self):
         slide_title = Title_Section(content="This a Title\\_Section to Show")
         ref1 = Reference(dictionary="example_extract_ref_equation/dictionaries_extracted/refs.txt",
-                         content=['ref_extract_1', 'ref_extract_2'])
+                         content=['ref_extract_1',
+                                  'ref_extract_2'])
         ref2 = Reference(content='[This is a fake ref, PP, XXYYZZ]')
         refs = VGroup(ref1, ref2).arrange(DOWN, buff=0.05).to_corner(UR, buff=0.2)
 
@@ -90,9 +96,12 @@ class Generic_Slide_Test(Scene):
                 "... And for the last point you can recover all points in the initial color",
             ]).to_corner(LEFT).shift(UP)
 
-        my_table = Table(content="table_data_base_1", dictionary="data_base").to_corner(DL, buff=0.4)
-        tt = Underbar(content=["Pano Pepino", "Some University", "My talk in China",
-                      "17th October 2025"])
+        my_table = Table(content="table_data_base_2",
+                         dictionary="data_base").to_corner(DL, buff=0.4)
+        tt = Underbar(content=["Pano Pepino",
+                               "Some University",
+                               "Some Title",
+                               "Feb 2050"])
 
         eq_show = Equation(
             dictionary="example_extract_ref_equation/dictionaries_extracted/equations.txt",

@@ -6,15 +6,12 @@ class Table(VGroup):
     """
     Simplify creation and decoration of tables in Manim, with optional dictionary loading and styling.
 
-    This class supports manual content input (a list of table rows) or dictionary-based loading of
-    structured content (e.g., mathematical expressions). It offers extensive customization options,
-    including color themes, corner radii, decorative borders, and row highlighting.
+    This class supports manual content input (a list of table rows) or dictionary-based loading of structured content (e.g., mathematical expressions). It offers extensive customization options, including color themes, corner radii, decorative borders, and row highlighting.
 
     :param content: Table content as a list of rows (each row is a list of elements), or a dictionary key.
     :type content: list[list] or str
 
-    :param dictionary: Optional path to a dictionary file for loading content. If ``"data_base"``,
-        uses the built-in Beanim table dictionary.
+    :param dictionary: Optional path to a dictionary file for loading content. If ``"data_base"``, uses the built-in Beanim table dictionary.
     :type dictionary: str, optional
 
     :param highlight_top: Whether to highlight the top row. Use ``"yes"`` (default) to enable.

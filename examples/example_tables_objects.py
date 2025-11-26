@@ -1,7 +1,7 @@
 from manim import *
 from manim_beanim import *
 
-import_template('green_mint')
+import_template_beanim('quantum_dusk')
 
 
 class Example_Table(Scene):

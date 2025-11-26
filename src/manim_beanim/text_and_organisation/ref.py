@@ -8,16 +8,12 @@ class Reference(Text_General):
     """
     Create academic-style citations and references formatted within brackets.
 
-    This class inherits from :class:`Text_General` and generates references in the format
-    ``[surname1, surname2, ..., ref]``. References can be provided directly as strings
-    or retrieved from a dictionary file using lookup keys.
+    This class inherits from :class:`Text_General` and generates references in the format ``[surname1, surname2, ..., ref]``. References can be provided directly as strings or retrieved from a dictionary file using lookup keys.
 
-    :param content: Reference content to display. Can be either direct reference strings
-        (e.g., ``"[Smith et al., 2023]"``) or dictionary keys that map to reference entries.
+    :param content: Reference content to display. Can be either direct reference strings (e.g., ``"[Smith et al., 2023]"``) or dictionary keys that map to reference entries.
     :type content: str or list[str]
 
-    :param the_dictionary: Optional path to a ``.txt`` file containing reference mappings.
-        If set to ``"data_base"``, uses the built-in Beanim reference dictionary.
+    :param the_dictionary: Optional path to a ``.txt`` file containing reference mappings. If set to ``"data_base"``, uses the built-in Beanim reference dictionary.
     :type the_dictionary: str, optional
 
     :param the_direction: Direction for arranging multiple references when content is a list.
