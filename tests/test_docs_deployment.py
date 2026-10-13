@@ -11,11 +11,12 @@ from urllib.parse import urlsplit
 import unittest
 from unittest.mock import patch
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / 'scripts'))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from docs_support import gallery_names, legacy_routes
 from prepare_docs import prepare
 from verify_docs import verify_artifact, verify_live, verify_live_once
+
+ROOT = Path(__file__).resolve().parents[1]
 
 SHA = 'a' * 40
 

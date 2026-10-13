@@ -8,13 +8,14 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import patch
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / 'src'))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 from manim import Tex, MathTex, Text, Scene, MathTable, config, tempconfig, RED, RIGHT
 import manim_beanim as b
 from manim_beanim.data.dictionaries import read_dictionary
 from manim_beanim.data.equations import parse_equations
 from manim_beanim.themes.provider import get_active_theme
+
+ROOT = Path(__file__).resolve().parents[1]
 
 class FunctionalTests(unittest.TestCase):
 
