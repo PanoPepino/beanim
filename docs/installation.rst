@@ -4,6 +4,24 @@ Installation
 Beanim requires Python 3.11 or newer and Manim's system dependencies,
 including Cairo, Pango, FFmpeg, LaTeX, and dvisvgm.
 
+Ubuntu theme fonts require Greek font definitions even for English text:
+
+.. code-block:: bash
+
+   sudo apt-get install texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-greek dvisvgm
+
+Manim 0.18.1 uses ``numpy.trapz``, removed in NumPy 2.4. When retaining
+that Manim version, install with a compatible NumPy range:
+
+.. code-block:: bash
+
+   python -m pip install "manim==0.18.1" "numpy>=2.0.2,<2.4" -e .
+
+Current Manim 0.21 CI jobs also test newer NumPy releases.
+Verify all theme fonts and geometry operations with
+``python scripts/check_render_environment.py``. Failed compilations retain
+diagnostic files in the reported temporary directory.
+
 Install from checkout:
 
 .. code-block:: bash
