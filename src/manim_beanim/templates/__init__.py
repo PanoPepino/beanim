@@ -1,4 +1,2 @@
-from .color_scheme import *
-
-__all__ = []
-__all__ += color_scheme.__all__
+from .color_scheme import import_template_beanim
+__all__ = ['import_template_beanim']

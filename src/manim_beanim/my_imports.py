@@ -1,11 +1,9 @@
-from manim import *
-from PIL import Image
-from typing import *
-import json
-from pickle import *
-import ast 
-from pathlib import *
+"""Legacy named imports. Package implementations import dependencies directly."""
+from manim import Tex, MathTex, VGroup, Group, config, RIGHT, LEFT, UP, DOWN, WHITE, BLACK
+import numpy as np
+from pathlib import Path
 from os import path
-
-#According to what I read on the internet, it is recommended to import once
-#a package and then bring it in into other modules by relative imports.
+from PIL import Image
+import ast
+import json
+__all__ = ['Tex', 'MathTex', 'VGroup', 'Group', 'config', 'RIGHT', 'LEFT', 'UP', 'DOWN', 'WHITE', 'BLACK', 'np', 'Path', 'path', 'Image', 'ast', 'json']

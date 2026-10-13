@@ -47,7 +47,7 @@ If you want more detailed explanations, see :doc:`examples`. You can also find a
 
    installation
    examples
-   api/modules
+   api
 
 ----
 

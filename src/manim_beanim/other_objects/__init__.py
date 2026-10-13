@@ -1,9 +1,3 @@
-
-from .photo import *
-from .post_it import *
-
-
-
-__all__= []
-__all__+= photo.__all__
-__all__+= post_it.__all__
+from .photo import Photo
+from .post_it import Post_It
+__all__ = ['Photo', 'Post_It']

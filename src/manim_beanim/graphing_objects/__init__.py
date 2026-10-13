@@ -1,6 +1,2 @@
-from .table_general import *
-
-__all__ = []
-__all__ += table_general.__all__
-
-
+from .table_general import Table
+__all__ = ['Table']

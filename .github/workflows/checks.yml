@@ -1,0 +1,57 @@
+name: Package checks
+on:
+  workflow_call:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  functional:
+    timeout-minutes: 45
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - python: "3.11"
+            manim: "0.18.1"
+          - python: "3.11"
+            manim: "0.21.0"
+          - python: "3.12"
+            manim: "0.21.0"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install rendering prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2-dev libpango1.0-dev pkg-config ffmpeg texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra dvisvgm
+      - name: Install package and checks
+        run: python -m pip install "manim==${{ matrix.manim }}" -e ".[docs,dev,examples]"
+      - name: Lint
+        run: ruff check .
+      - name: Regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Build wheel and source distribution
+        run: python -m build --outdir "$RUNNER_TEMP/beanim-dist"
+      - name: Check installed wheel outside checkout
+        run: |
+          python -m venv --system-site-packages "$RUNNER_TEMP/beanim-wheel"
+          "$RUNNER_TEMP/beanim-wheel/bin/python" -m pip install --no-deps "$RUNNER_TEMP"/beanim-dist/*.whl
+          cd "$RUNNER_TEMP"
+          "$RUNNER_TEMP/beanim-wheel/bin/python" -I -c 'from importlib.resources import files; from manim_beanim import apply_theme, get_theme; from manim_beanim.data.dictionaries import read_dictionary; apply_theme("blue_ice"); assert get_theme("green_mint"); assert files("manim_beanim.assets").joinpath("svg", "pin.svg").is_file(); assert read_dictionary("data_base", "equations")'
+      - name: Render unchanged examples from temporary copy
+        run: |
+          cp -R examples "$RUNNER_TEMP/beanim-examples"
+          cd "$RUNNER_TEMP/beanim-examples"
+          python -m manim render -ql -s --disable_caching --media_dir "$RUNNER_TEMP/beanim-renders" example_text_organisation.py Title_Slide_Test Title_Section_Test Ref_Test Equation_Test Underbar_Test
+          python -m manim render -ql -s --disable_caching --media_dir "$RUNNER_TEMP/beanim-renders" example_tables_objects.py Example_Table Example_Photo_Post_it
+          python -m manim render -ql --fps 5 --disable_caching --media_dir "$RUNNER_TEMP/beanim-renders" example_generic.py Generic_Presentation
+          python -m manim render -ql --fps 5 --disable_caching --media_dir "$RUNNER_TEMP/beanim-renders" example_multi_template.py Multi_Template
+      - name: Build and verify docs
+        run: |
+          python -m sphinx -E -a -W --keep-going -d "$RUNNER_TEMP/beanim-doctrees" -b html docs "$RUNNER_TEMP/beanim-docs"
+          python scripts/prepare_docs.py "$RUNNER_TEMP/beanim-docs" --sha "$GITHUB_SHA"
+          python scripts/verify_docs.py --artifact "$RUNNER_TEMP/beanim-docs" --sha "$GITHUB_SHA"

@@ -25,3 +25,26 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Regenerable Manim and documentation output
+**/media/Tex/
+**/media/texts/
+**/partial_movie_files/
+/examples/slides/
+/slides/
+
+# Pages publishes curated gallery images only. Keep other renders local.
+/docs/_static/media/*
+!/docs/_static/media/images/
+/docs/_static/media/images/*
+!/docs/_static/media/images/Generic_Slide_Test_beamer_blue.png
+!/docs/_static/media/images/Generic_Slide_Test_beamer_green.png
+!/docs/_static/media/images/Generic_Slide_Test_blue_ice.png
+!/docs/_static/media/images/Generic_Slide_Test_dark_energy.png
+!/docs/_static/media/images/Generic_Slide_Test_default_template.png
+!/docs/_static/media/images/Generic_Slide_Test_green_mint.png
+!/docs/_static/media/images/Generic_Slide_Test_quantum_dusk.png
+!/docs/_static/media/images/Generic_Slide_Test_red_autumn.png
+
+.venv/
+.ruff_cache/
+.pytest_cache/

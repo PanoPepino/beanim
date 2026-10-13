@@ -1,34 +1,42 @@
 Installation
 ============
 
-- Assumption! The reader is slightly familiar with git and pip terminology. Were the reader not familiar, we recommend them to see:
-`Manim Installation <https://docs.manim.community/en/stable/installation.html>`_
+Beanim requires Python 3.11 or newer and Manim's system dependencies,
+including Cairo, Pango, FFmpeg, LaTeX, and dvisvgm.
 
-What is required?
------------------
-
-* Python 3.12+
-* `Manim Community Edition <https://docs.manim.community/en/stable/index.html>`_
-* `Manim-Slides <https://manim-slides.eertmans.be/latest/>`_
-* NumPy
-* Any other package required by previous ones
-
-How to install?
---------------
+Install from checkout:
 
 .. code-block:: bash
 
-   cd path/to/desired/location
-   git clone https://github.com/PanoPepino/beanim.git
-   cd beanim
-   pip install -e .
+   python -m pip install -e .
 
-In order to check that the installation was fruitful, you can just type:
+For existing presentation examples using Manim-Slides:
 
 .. code-block:: bash
 
-   pip show manim_beanim
+   python -m pip install -e ".[examples]"
 
-.. note::
+Select a presentation-wide theme before constructing objects:
 
-   While the name of the repository remains as **Beanim**, note that the package you are installing will be called **manim_beanim**. This will group all your manim packages and addons in appropiate alphabetic order when using pip show.
+.. code-block:: python
+
+   from manim_beanim import apply_theme
+
+   apply_theme("blue_ice")
+
+Inside an existing Scene, use ``apply_theme("blue_ice", scene=self)``.
+This updates its background. Existing objects keep their appearance.
+Explicit constructor styling overrides theme defaults.
+
+Legacy imports and ``import_template_beanim()`` remain supported.
+
+Documentation
+-------------
+
+.. code-block:: bash
+
+   python -m pip install -e ".[docs]"
+   python -m sphinx -W --keep-going -b html docs docs/_build/html
+   python -m http.server 8000 --directory docs/_build/html
+
+Open ``http://localhost:8000/``.

@@ -1,64 +1,14 @@
-import importlib
+"""Legacy theme selection delegates to the complete presentation-wide application."""
+import warnings
+from ..themes.application import apply_theme
+from ..themes.presets import get_theme
+__all__ = ['import_template_beanim']
 
-from ..my_imports import *
-
-__all__ = ["import_template_beanim"]
-
-
-def import_template_beanim(module_name: str):
-    """
-    Import a chosen template to standardize styling across all Beanim objects.
-
-    This function loads a predefined color and styling template that will be applied to all subsequent Beanim objects created in the scene. It helps maintain visual consistency across presentations.
-
-    :param module_name: Name of the template to import. Must be one of the allowed templates.
-    :type module_name: str
-
-    :raises ModuleNotFoundError: If the specified template module cannot be found.
-
-    .. note::
-
-       This function should be called before defining your Scene class to ensure
-       the template is properly loaded before any Beanim objects are created.
-
-    **Available templates:**
-        - ``"green_mint"``
-        - ``"blue_ice"``
-        - ``"red_autumn"``
-        - ``"beamer_blue"``
-        - ``"beamer_green"``
-        - ``"dark_energy"``
-        - ``"quantum dusk"``
-        - ``"default_template"`` (default)
-
-    **Example usage:**
-
-    .. code-block:: python
-
-        from manim_beanim import *
-
-        import_template_beanim('desired_template')
-
-        class MyScene(Scene):
-            def construct(self):
-                # Your Beanim objects will now use the selected template
-                pass
-    """
-
-    allowed_modules = ["green_mint",
-                       "blue_ice",
-                       "red_autumn",
-                       "beamer_blue",
-                       "beamer_green",
-                       "quantum_dusk",
-                       "dark_energy"]
-
-    # Import base template
-    if module_name in allowed_modules:
-        module_path = f"manim_beanim.templates.collection.{module_name}"
-        print("Using " + f'{module_name}' + " template!!")
-    else:
-        print("That template does not exist. Using default B/W template instead!!")
-        module_path = "manim_beanim.templates.collection.default_template"
-
-    importlib.import_module(module_path)
+def import_template_beanim(module_name: str, *, scene=None):
+    """Apply theme to future objects; unknown legacy names fall back to default."""
+    try:
+        theme = get_theme(module_name)
+    except ValueError:
+        warnings.warn(f'Unknown theme {module_name!r}; using default_template', UserWarning, stacklevel=2)
+        theme = get_theme('default_template')
+    apply_theme(theme, scene=scene)

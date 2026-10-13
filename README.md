@@ -47,16 +47,16 @@ Here you can find an overview of the current templates and how almost all object
 
 <div align="center">
 
-| Template | Title Slide | Generic Slide |
-|:--------:|:-----------:|:-------------:|
-| 🎨 **default_template** | <img src="docs/_static/media/images/Title_Slide_Test_default_template.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_default_template.png" width="200"/> |
-| 🌿 **green_mint** | <img src="docs/_static/media/images/Title_Slide_Test_green_mint.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_green_mint.png" width="200"/> |
-| 🧊 **blue_ice** | <img src="docs/_static/media/images/Title_Slide_Test_blue_ice.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_blue_ice.png" width="200"/> |
-| 🍂 **red_autumn** | <img src="docs/_static/media/images/Title_Slide_Test_red_autumn.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_red_autumn.png" width="200"/> |
-| 🔵 **beamer_blue** | <img src="docs/_static/media/images/Title_Slide_Test_beamer_blue.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_beamer_blue.png" width="200"/> |
-| 🟢 **beamer_green** | <img src="docs/_static/media/images/Title_Slide_Test_beamer_green.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_beamer_green.png" width="200"/> |
-| 🌌 **quantum_dusk** | <img src="docs/_static/media/images/Title_Slide_Test_quantum_dusk.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_quantum_dusk.png" width="200"/> |
-| ⚫ **dark_energy** | <img src="docs/_static/media/images/Title_Slide_Test_dark_energy.png" width="200"/> | <img src="docs/_static/media/images/Generic_Slide_Test_dark_energy.png" width="200"/> |
+| Template | Preview |
+|:--------:|:-------------:|
+| 🎨 **default_template** | <img src="docs/_static/media/images/Generic_Slide_Test_default_template.png" width="200"/> |
+| 🌿 **green_mint** | <img src="docs/_static/media/images/Generic_Slide_Test_green_mint.png" width="200"/> |
+| 🧊 **blue_ice** | <img src="docs/_static/media/images/Generic_Slide_Test_blue_ice.png" width="200"/> |
+| 🍂 **red_autumn** | <img src="docs/_static/media/images/Generic_Slide_Test_red_autumn.png" width="200"/> |
+| 🔵 **beamer_blue** | <img src="docs/_static/media/images/Generic_Slide_Test_beamer_blue.png" width="200"/> |
+| 🟢 **beamer_green** | <img src="docs/_static/media/images/Generic_Slide_Test_beamer_green.png" width="200"/> |
+| 🌌 **quantum_dusk** | <img src="docs/_static/media/images/Generic_Slide_Test_quantum_dusk.png" width="200"/> |
+| ⚫ **dark_energy** | <img src="docs/_static/media/images/Generic_Slide_Test_dark_energy.png" width="200"/> |
 
 </div>
 
@@ -69,7 +69,7 @@ In order to **install** this library, do the following:
 ```bash
 git clone https://github.com/PanoPepino/beanim
 
-pip install beanim/ .
+python -m pip install ./beanim
 ```
 
 - To **use** with in your manim files, call it with:
@@ -107,11 +107,13 @@ If you find this project helpful, consider supporting its development. Thank you
 <!--
 ---Log of changes---
 
+2025/12/02: - Added multi_template.py file to directly craft all templates without effort
+
 2025/11/26: - Changed import_template to import_template_beanim
             - Added 2 new templates inspired by AI
             - Modified README and examples.rst to accomodate changes.
 
->
+-->
 
 
 <!-- ## TO DO
@@ -128,4 +130,40 @@ If you find this project helpful, consider supporting its development. Thank you
 - More templates. Always more templates. [_]
 - Extra features to Title_Section and similar (underbar, different color for first Capital letter, etc.) [_]
 - Extra animation methods (Sliding Title_Section + delayed background, etc..) [_]
->
+-->
+
+## Theme application
+
+Use `apply_theme("blue_ice")` before creating objects, or
+`apply_theme("blue_ice", scene=self)` inside an existing scene to update its background.
+Theme selection applies to future Beanim components and ordinary Manim text.
+Existing objects keep their appearance; explicit constructor styling overrides presets.
+`import_template_beanim()` and legacy import paths remain supported.
+
+Dictionary sources support JSON, existing Python-literal `.txt` files, pathlib paths,
+and mappings. Input dictionaries never execute Python code.
+
+Run regression checks with `python -m unittest discover -s tests -v`.
+
+## Documentation deployment
+
+GitHub Pages publishes Sphinx/Furo documentation after package checks pass.
+Set repository **Settings → Pages → Source** to **GitHub Actions**.
+The workflow verifies styles, gallery images, API links, legacy redirects,
+and deployed commit identity. Push to `main` to trigger it.
+
+Only eight curated template screenshots are published. Generated videos,
+TeX files and intermediate renders stay local.
+Refresh screenshots with `python scripts/refresh_gallery.py`.
+
+Build and validate locally with Python 3.12 or newer (required by pinned Sphinx 9.1):
+
+```bash
+python -m pip install -c docs/requirements.txt ".[docs]"
+python -m sphinx -E -a -W --keep-going -d docs/_build/doctrees -b html docs docs/_build/html
+python scripts/prepare_docs.py docs/_build/html --sha "$(git rev-parse HEAD)"
+python scripts/verify_docs.py --artifact docs/_build/html --sha "$(git rev-parse HEAD)"
+python -m http.server 8000 --directory docs/_build/html
+```
+
+Open http://localhost:8000/. Commit and push remain manual.

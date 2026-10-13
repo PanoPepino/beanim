@@ -1,0 +1,819 @@
+{
+  "beamer_green": {
+    "name": "beamer_green",
+    "background_color": "#FFFFFF",
+    "tex_font": "droid_serif",
+    "text_size": 30,
+    "text_color": "#0B5B30",
+    "styles": {
+      "text": {
+        "text_size": 30,
+        "text_color": "#000000",
+        "decorator_presence": "box",
+        "decorator_color": "#096E30",
+        "decorator_stroke_width": 0.5,
+        "corner_rad": 0.1,
+        "corner_rad_direction": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "fill_opa": 0.9,
+        "tightness": 0.2,
+        "stroke_opa": 1,
+        "dot_scale": 1.5,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "presentation_title": {
+        "decorator_presence": "box",
+        "tightness": 0.6000000000000001,
+        "text_color": "#FFFFFF"
+      },
+      "section_title": {
+        "decorator_presence": "back_frame",
+        "tightness": 0.26,
+        "text_color": "#FFFFFF"
+      },
+      "bullets": {
+        "fill_opa": 0.1
+      },
+      "reference": {
+        "text_size": 15.0,
+        "decorator_presence": "no",
+        "aligned_direction": [
+          0,
+          0,
+          0
+        ],
+        "text_color": "#0B5B30"
+      },
+      "equation": {
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "fill_opa": 0.1
+      },
+      "underbar": {
+        "text_color": "#FFFFFF"
+      },
+      "table": {
+        "highlight_top": "yes",
+        "text_size": 30,
+        "text_color": "#0B5B30",
+        "decorator_presence": "box",
+        "decorator_color": "#096E30",
+        "decorator_color_2": "#09AC7B",
+        "decorator_color_3": "#0AD46C",
+        "decorator_color_4": "#C6FF7C",
+        "decorator_stroke_width": 0.5,
+        "corner_rad": 0.1,
+        "corner_rad_direction": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "fill_opa": 0.1,
+        "h_tightness": 0.5,
+        "v_tightness": 0.5,
+        "tightness": 0,
+        "stroke_opa": 1,
+        "stroke_color": "#09AC7B"
+      },
+      "photo": {
+        "decorator_style": "techno",
+        "decorator_color": "#096E30",
+        "text_size": 22.5,
+        "text_color": "#0B5B30",
+        "pin_color": "#0B5B30",
+        "corner_rad": 0.1,
+        "decorator_stroke_w": 0.5
+      },
+      "post_it": {
+        "text_color": "#0B5B30",
+        "text_size": 30,
+        "pin_color": "#0B5B30"
+      }
+    }
+  },
+  "beamer_blue": {
+    "name": "beamer_blue",
+    "background_color": "#FFFFFF",
+    "tex_font": "droid_serif",
+    "text_size": 30,
+    "text_color": "#000000",
+    "styles": {
+      "text": {
+        "text_size": 30,
+        "text_color": "#000000",
+        "decorator_presence": "box",
+        "decorator_color": "#003E7C",
+        "decorator_stroke_width": 0.5,
+        "corner_rad": 0.1,
+        "corner_rad_direction": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "fill_opa": 0.9,
+        "tightness": 0.2,
+        "stroke_opa": 1,
+        "dot_scale": 1.5,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "presentation_title": {
+        "decorator_presence": "box",
+        "tightness": 0.6000000000000001,
+        "text_color": "#FFFFFF"
+      },
+      "section_title": {
+        "decorator_presence": "back_frame",
+        "tightness": 0.26,
+        "text_color": "#FFFFFF"
+      },
+      "bullets": {
+        "fill_opa": 0.1
+      },
+      "reference": {
+        "text_size": 15.0,
+        "decorator_presence": "no",
+        "aligned_direction": [
+          0,
+          0,
+          0
+        ],
+        "text_color": "#000000"
+      },
+      "equation": {
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "fill_opa": 0.1
+      },
+      "underbar": {
+        "text_color": "#FFFFFF"
+      },
+      "table": {
+        "highlight_top": "yes",
+        "text_size": 30,
+        "text_color": "#000000",
+        "decorator_presence": "box",
+        "decorator_color": "#003E7C",
+        "decorator_color_2": "#297ACB",
+        "decorator_color_3": "#A0CBFC",
+        "decorator_color_4": "#97DDF9",
+        "decorator_stroke_width": 0.5,
+        "corner_rad": 0.1,
+        "corner_rad_direction": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "fill_opa": 0.1,
+        "h_tightness": 0.5,
+        "v_tightness": 0.5,
+        "tightness": 0,
+        "stroke_opa": 1,
+        "stroke_color": "#297ACB"
+      },
+      "photo": {
+        "decorator_style": "techno",
+        "decorator_color": "#003E7C",
+        "text_size": 22.5,
+        "text_color": "#000000",
+        "pin_color": "#000000",
+        "corner_rad": 0.1,
+        "decorator_stroke_w": 0.5
+      },
+      "post_it": {
+        "text_color": "#000000",
+        "text_size": 30,
+        "pin_color": "#000000"
+      }
+    }
+  },
+  "quantum_dusk": {
+    "name": "quantum_dusk",
+    "background_color": "#F1EFF7",
+    "tex_font": "biolinum",
+    "text_size": 35,
+    "text_color": "#1A1033",
+    "styles": {
+      "text": {
+        "text_size": 35,
+        "text_color": "#1A1033",
+        "decorator_presence": "box",
+        "decorator_color": "#6B4C9A",
+        "decorator_stroke_width": 1,
+        "corner_rad": 0,
+        "corner_rad_direction": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "fill_opa": 0.05,
+        "tightness": 0.2,
+        "stroke_opa": 1,
+        "dot_scale": 1.5,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "presentation_title": {
+        "decorator_presence": "back_frame",
+        "tightness": 0.6000000000000001
+      },
+      "section_title": {
+        "decorator_presence": "back_frame",
+        "tightness": 0.26
+      },
+      "bullets": {},
+      "reference": {
+        "text_size": 17.5,
+        "decorator_presence": "no",
+        "aligned_direction": [
+          0,
+          0,
+          0
+        ]
+      },
+      "equation": {
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "underbar": {},
+      "table": {
+        "highlight_top": "yes",
+        "text_size": 35,
+        "text_color": "#1A1033",
+        "decorator_presence": "box",
+        "decorator_color": "#6B4C9A",
+        "decorator_color_2": "#2A1F5C",
+        "decorator_color_3": "#8B72C2",
+        "decorator_color_4": "#F0EDF5",
+        "decorator_stroke_width": 1,
+        "corner_rad": 0,
+        "corner_rad_direction": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "fill_opa": 0.05,
+        "h_tightness": 0.5,
+        "v_tightness": 0.5,
+        "tightness": 0,
+        "stroke_opa": 1
+      },
+      "photo": {
+        "decorator_style": "techno",
+        "decorator_color": "#6B4C9A",
+        "text_size": 26.25,
+        "text_color": "#1A1033",
+        "pin_color": "#1A1033",
+        "corner_rad": 0,
+        "decorator_stroke_w": 1
+      },
+      "post_it": {
+        "text_color": "#1A1033",
+        "text_size": 35,
+        "pin_color": "#1A1033"
+      }
+    }
+  },
+  "green_mint": {
+    "name": "green_mint",
+    "background_color": "#F2FFFB",
+    "tex_font": "droid_sans",
+    "text_size": 35,
+    "text_color": "#006661",
+    "styles": {
+      "text": {
+        "text_size": 35,
+        "text_color": "#006661",
+        "decorator_presence": "box",
+        "decorator_color": "#006661",
+        "decorator_stroke_width": 1,
+        "corner_rad": 0.1,
+        "corner_rad_direction": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "fill_opa": 0.1,
+        "tightness": 0.2,
+        "stroke_opa": 0.5,
+        "dot_scale": 1.5,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "presentation_title": {
+        "decorator_presence": "box_long_right",
+        "tightness": 0.6000000000000001
+      },
+      "section_title": {
+        "decorator_presence": "box_long_right"
+      },
+      "bullets": {},
+      "reference": {
+        "text_size": 17.5,
+        "decorator_presence": "no",
+        "aligned_direction": [
+          0,
+          0,
+          0
+        ]
+      },
+      "equation": {
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "underbar": {},
+      "table": {
+        "highlight_top": "yes",
+        "text_size": 35,
+        "text_color": "#006661",
+        "decorator_presence": "box",
+        "decorator_color": "#006661",
+        "decorator_color_2": "#7DB873",
+        "decorator_color_3": "#0AD46C",
+        "decorator_color_4": "#C6FF7C",
+        "decorator_stroke_width": 1,
+        "corner_rad": 0.1,
+        "corner_rad_direction": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "fill_opa": 0.1,
+        "h_tightness": 0.5,
+        "v_tightness": 0.5,
+        "tightness": 0,
+        "stroke_opa": 0.5
+      },
+      "photo": {
+        "decorator_style": "techno",
+        "decorator_color": "#006661",
+        "text_size": 26.25,
+        "text_color": "#006661",
+        "pin_color": "#006661",
+        "corner_rad": 0.1,
+        "decorator_stroke_w": 1
+      },
+      "post_it": {
+        "text_color": "#006661",
+        "text_size": 35,
+        "pin_color": "#006661"
+      }
+    }
+  },
+  "default_template": {
+    "name": "default_template",
+    "background_color": "#FFFFFF",
+    "tex_font": "latin_modern_tw",
+    "text_size": 35,
+    "text_color": "#000000",
+    "styles": {
+      "text": {
+        "text_size": 35,
+        "text_color": "#000000",
+        "decorator_presence": "box",
+        "decorator_color": "#000000",
+        "decorator_stroke_width": 1,
+        "corner_rad": 0,
+        "corner_rad_direction": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fill_opa": 0.1,
+        "tightness": 0.3,
+        "stroke_opa": 1,
+        "dot_scale": 1,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "presentation_title": {
+        "decorator_presence": "back_frame",
+        "tightness": 0.8999999999999999
+      },
+      "section_title": {
+        "decorator_presence": "back_frame"
+      },
+      "bullets": {},
+      "reference": {
+        "text_size": 17.5,
+        "decorator_presence": "no",
+        "aligned_direction": [
+          0,
+          0,
+          0
+        ]
+      },
+      "equation": {
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "underbar": {},
+      "table": {
+        "highlight_top": "yes",
+        "text_size": 35,
+        "text_color": "#000000",
+        "decorator_presence": "box",
+        "decorator_color": "#000000",
+        "decorator_color_2": "#DDDDDD",
+        "decorator_color_3": "#BBBBBB",
+        "decorator_color_4": "#888888",
+        "decorator_stroke_width": 1,
+        "corner_rad": 0,
+        "corner_rad_direction": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fill_opa": 0.1,
+        "h_tightness": 0.5,
+        "v_tightness": 0.5,
+        "tightness": 0,
+        "stroke_opa": 1
+      },
+      "photo": {
+        "decorator_style": "techno",
+        "decorator_color": "#000000",
+        "text_size": 26.25,
+        "text_color": "#000000",
+        "pin_color": "#000000",
+        "corner_rad": 0,
+        "decorator_stroke_w": 1
+      },
+      "post_it": {
+        "text_color": "#000000",
+        "text_size": 35,
+        "pin_color": "#000000"
+      }
+    }
+  },
+  "red_autumn": {
+    "name": "red_autumn",
+    "background_color": "#FAF9F5",
+    "tex_font": "helvetica_fourier_it",
+    "text_size": 30,
+    "text_color": "#81331B",
+    "styles": {
+      "text": {
+        "text_size": 30,
+        "text_color": "#81331B",
+        "decorator_presence": "box",
+        "decorator_color": "#81331B",
+        "decorator_stroke_width": 1,
+        "corner_rad": 0.05,
+        "corner_rad_direction": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "fill_opa": 0.1,
+        "tightness": 0.3,
+        "stroke_opa": 0.2,
+        "dot_scale": 1.5,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "presentation_title": {
+        "decorator_presence": "box_long_right",
+        "tightness": 0.8999999999999999
+      },
+      "section_title": {
+        "decorator_presence": "box_long_right"
+      },
+      "bullets": {
+        "decorator_presence": "box_long_right"
+      },
+      "reference": {
+        "text_size": 15.0,
+        "decorator_presence": "no",
+        "aligned_direction": [
+          0,
+          0,
+          0
+        ]
+      },
+      "equation": {
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "underbar": {},
+      "table": {
+        "highlight_top": "yes",
+        "text_size": 30,
+        "text_color": "#81331B",
+        "decorator_presence": "box",
+        "decorator_color": "#81331B",
+        "decorator_color_2": "#B87390",
+        "decorator_color_3": "#F49191",
+        "decorator_color_4": "#FFC67C",
+        "decorator_stroke_width": 1,
+        "corner_rad": 0.05,
+        "corner_rad_direction": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "fill_opa": 0.1,
+        "h_tightness": 0.5,
+        "v_tightness": 0.5,
+        "tightness": 0,
+        "stroke_opa": 0.2
+      },
+      "photo": {
+        "decorator_style": "techno",
+        "decorator_color": "#81331B",
+        "text_size": 22.5,
+        "text_color": "#81331B",
+        "pin_color": "#81331B",
+        "corner_rad": 0.05,
+        "decorator_stroke_w": 1
+      },
+      "post_it": {
+        "text_color": "#81331B",
+        "text_size": 30,
+        "pin_color": "#81331B"
+      }
+    }
+  },
+  "blue_ice": {
+    "name": "blue_ice",
+    "background_color": "#F1F8FF",
+    "tex_font": "biolinum",
+    "text_size": 35,
+    "text_color": "#003E7C",
+    "styles": {
+      "text": {
+        "text_size": 35,
+        "text_color": "#003E7C",
+        "decorator_presence": "box",
+        "decorator_color": "#003E7C",
+        "decorator_stroke_width": 1,
+        "corner_rad": 0.05,
+        "corner_rad_direction": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "fill_opa": 0.05,
+        "tightness": 0.2,
+        "stroke_opa": 1,
+        "dot_scale": 1.5,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "presentation_title": {
+        "decorator_presence": "back_frame",
+        "tightness": 0.6000000000000001
+      },
+      "section_title": {
+        "decorator_presence": "back_frame",
+        "tightness": 0.26
+      },
+      "bullets": {},
+      "reference": {
+        "text_size": 17.5,
+        "decorator_presence": "no",
+        "aligned_direction": [
+          0,
+          0,
+          0
+        ]
+      },
+      "equation": {
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "underbar": {},
+      "table": {
+        "highlight_top": "yes",
+        "text_size": 35,
+        "text_color": "#003E7C",
+        "decorator_presence": "box",
+        "decorator_color": "#003E7C",
+        "decorator_color_2": "#7973B8",
+        "decorator_color_3": "#A0BCFC",
+        "decorator_color_4": "#7CDAFF",
+        "decorator_stroke_width": 1,
+        "corner_rad": 0.05,
+        "corner_rad_direction": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "fill_opa": 0.05,
+        "h_tightness": 0.5,
+        "v_tightness": 0.5,
+        "tightness": 0,
+        "stroke_opa": 1
+      },
+      "photo": {
+        "decorator_style": "techno",
+        "decorator_color": "#003E7C",
+        "text_size": 26.25,
+        "text_color": "#003E7C",
+        "pin_color": "#003E7C",
+        "corner_rad": 0.05,
+        "decorator_stroke_w": 1
+      },
+      "post_it": {
+        "text_color": "#003E7C",
+        "text_size": 35,
+        "pin_color": "#003E7C"
+      }
+    }
+  },
+  "dark_energy": {
+    "name": "dark_energy",
+    "background_color": "#0D1B2A",
+    "tex_font": "latin_modern_tw",
+    "text_size": 35,
+    "text_color": "#E0E1DD",
+    "styles": {
+      "text": {
+        "text_size": 35,
+        "text_color": "#E0E1DD",
+        "decorator_presence": "box",
+        "decorator_color": "#00D9FF",
+        "decorator_stroke_width": 1,
+        "corner_rad": 0.05,
+        "corner_rad_direction": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "fill_opa": 0.05,
+        "tightness": 0.2,
+        "stroke_opa": 1,
+        "dot_scale": 1.5,
+        "direction": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "presentation_title": {
+        "decorator_presence": "box_long_left",
+        "tightness": 0.6000000000000001
+      },
+      "section_title": {
+        "decorator_presence": "box_long_left",
+        "tightness": 0.26
+      },
+      "bullets": {},
+      "reference": {
+        "text_size": 17.5,
+        "decorator_presence": "no",
+        "aligned_direction": [
+          0,
+          0,
+          0
+        ]
+      },
+      "equation": {
+        "aligned_direction": [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "underbar": {},
+      "table": {
+        "highlight_top": "yes",
+        "text_size": 35,
+        "text_color": "#E0E1DD",
+        "decorator_presence": "box",
+        "decorator_color": "#00D9FF",
+        "decorator_color_2": "#00FFC6",
+        "decorator_color_3": "#1B263B",
+        "decorator_color_4": "#E0E1DD",
+        "decorator_stroke_width": 1,
+        "corner_rad": 0.05,
+        "corner_rad_direction": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "fill_opa": 0.05,
+        "h_tightness": 0.5,
+        "v_tightness": 0.5,
+        "tightness": 0,
+        "stroke_opa": 1
+      },
+      "photo": {
+        "decorator_style": "techno",
+        "decorator_color": "#00D9FF",
+        "text_size": 26.25,
+        "text_color": "#E0E1DD",
+        "pin_color": "#E0E1DD",
+        "corner_rad": 0.05,
+        "decorator_stroke_w": 1
+      },
+      "post_it": {
+        "text_color": "#E0E1DD",
+        "text_size": 35,
+        "pin_color": "#E0E1DD"
+      }
+    }
+  }
+}

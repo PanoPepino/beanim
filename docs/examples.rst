@@ -26,12 +26,8 @@ Template Gallery
 
      <!-- default_template -->
      <div style="margin-bottom: 40px;">
-       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🎨 default_template</h3>
-       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-         <div style="text-align: center;">
-           <p style="font-weight: bold; margin-bottom: 8px;"></p>
-           <img src="_static/media/images/Title_Slide_Test_default_template.png" alt="default_template title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
-         </div>
+       <h3 style="color: inherit; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🎨 default_template</h3>
+       <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
          <div style="text-align: center;">
            <p style="font-weight: bold; margin-bottom: 8px;"></p>
            <img src="_static/media/images/Generic_Slide_Test_default_template.png" alt="default_template generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
@@ -41,12 +37,8 @@ Template Gallery
 
      <!-- green_mint -->
      <div style="margin-bottom: 40px;">
-       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🌿 green_mint</h3>
-       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-         <div style="text-align: center;">
-           <p style="font-weight: bold; margin-bottom: 8px;"></p>
-           <img src="_static/media/images/Title_Slide_Test_green_mint.png" alt="green_mint title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
-         </div>
+       <h3 style="color: inherit; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🌿 green_mint</h3>
+       <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
          <div style="text-align: center;">
            <p style="font-weight: bold; margin-bottom: 8px;"></p>
            <img src="_static/media/images/Generic_Slide_Test_green_mint.png" alt="green_mint generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
@@ -56,12 +48,8 @@ Template Gallery
 
      <!-- blue_ice -->
      <div style="margin-bottom: 40px;">
-       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🧊 blue_ice</h3>
-       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-         <div style="text-align: center;">
-           <p style="font-weight: bold; margin-bottom: 8px;"></p>
-           <img src="_static/media/images/Title_Slide_Test_blue_ice.png" alt="blue_ice title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
-         </div>
+       <h3 style="color: inherit; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🧊 blue_ice</h3>
+       <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
          <div style="text-align: center;">
            <p style="font-weight: bold; margin-bottom: 8px;"></p>
            <img src="_static/media/images/Generic_Slide_Test_blue_ice.png" alt="blue_ice generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
@@ -71,12 +59,8 @@ Template Gallery
 
      <!-- red_autumn -->
      <div style="margin-bottom: 40px;">
-       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🍂 red_autumn</h3>
-       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-         <div style="text-align: center;">
-           <p style="font-weight: bold; margin-bottom: 8px;"></p>
-           <img src="_static/media/images/Title_Slide_Test_red_autumn.png" alt="red_autumn title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
-         </div>
+       <h3 style="color: inherit; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🍂 red_autumn</h3>
+       <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
          <div style="text-align: center;">
            <p style="font-weight: bold; margin-bottom: 8px;"></p>
            <img src="_static/media/images/Generic_Slide_Test_red_autumn.png" alt="red_autumn generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
@@ -86,12 +70,8 @@ Template Gallery
 
      <!-- beamer_blue -->
      <div style="margin-bottom: 40px;">
-       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🔵 beamer_blue</h3>
-       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-         <div style="text-align: center;">
-           <p style="font-weight: bold; margin-bottom: 8px;"></p>
-           <img src="_static/media/images/Title_Slide_Test_beamer_blue.png" alt="beamer_blue title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
-         </div>
+       <h3 style="color: inherit; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🔵 beamer_blue</h3>
+       <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
          <div style="text-align: center;">
            <p style="font-weight: bold; margin-bottom: 8px;"></p>
            <img src="_static/media/images/Generic_Slide_Test_beamer_blue.png" alt="beamer_blue generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
@@ -101,12 +81,8 @@ Template Gallery
 
      <!-- beamer_green -->
      <div style="margin-bottom: 40px;">
-       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🟢 beamer_green</h3>
-       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-         <div style="text-align: center;">
-           <p style="font-weight: bold; margin-bottom: 8px;"></p>
-           <img src="_static/media/images/Title_Slide_Test_beamer_green.png" alt="beamer_green title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
-         </div>
+       <h3 style="color: inherit; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🟢 beamer_green</h3>
+       <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
          <div style="text-align: center;">
            <p style="font-weight: bold; margin-bottom: 8px;"></p>
            <img src="_static/media/images/Generic_Slide_Test_beamer_green.png" alt="beamer_green generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
@@ -116,12 +92,8 @@ Template Gallery
 
      <!-- quantum_dusk -->
      <div style="margin-bottom: 40px;">
-       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🌌 quantum_dusk</h3>
-       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-         <div style="text-align: center;">
-           <p style="font-weight: bold; margin-bottom: 8px;"></p>
-           <img src="_static/media/images/Title_Slide_Test_quantum_dusk.png" alt="quantum_dusk title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
-         </div>
+       <h3 style="color: inherit; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">🌌 quantum_dusk</h3>
+       <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
          <div style="text-align: center;">
            <p style="font-weight: bold; margin-bottom: 8px;"></p>
            <img src="_static/media/images/Generic_Slide_Test_quantum_dusk.png" alt="quantum_dusk generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
@@ -131,12 +103,8 @@ Template Gallery
 
      <!-- dark_energy -->
      <div style="margin-bottom: 40px;">
-       <h3 style="color: white; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">⚫ dark_energy</h3>
-       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-         <div style="text-align: center;">
-           <p style="font-weight: bold; margin-bottom: 8px;"></p>
-           <img src="_static/media/images/Title_Slide_Test_dark_energy.png" alt="dark_energy title" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
-         </div>
+       <h3 style="color: inherit; padding: 5px; text-align: center; margin-bottom: 15px; border-radius: 5px;">⚫ dark_energy</h3>
+       <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
          <div style="text-align: center;">
            <p style="font-weight: bold; margin-bottom: 8px;"></p>
            <img src="_static/media/images/Generic_Slide_Test_dark_energy.png" alt="dark_energy generic" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
@@ -146,6 +114,19 @@ Template Gallery
 
    </div>
 
+
+Compare every template
+^^^^^^^^^^^^^^^^^^^^^^
+
+Render the generic slide for all templates with the new example:
+
+.. code-block:: bash
+
+   manim render -ql examples/example_multi_template.py Multi_Template
+
+The example calls ``apply_theme(template_name, scene=self)`` before creating
+objects. Each template remains visible for three seconds. Existing objects keep
+their appearance, so a new slide is constructed for each template.
 
 Step 1: Import and Setup
 -------------------------
@@ -377,7 +358,7 @@ Next Steps
 
 Now that you've created your first presentation with Beanim, explore more advanced features:
 
-* 🔧 Learn about extracting equations and references from files in the :doc:`api/modules` section
+* 🔧 Learn about extracting equations and references from files in the :doc:`api` section
 * 🎨 Experiment with different templates and customize your slides
 * 💡 Visit the `Manim-Slides documentation <https://manim-slides.eertmans.be/latest/quickstart.html>`_ for additional animation techniques
 

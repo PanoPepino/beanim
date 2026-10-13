@@ -1,16 +1,8 @@
-from .blb import *
-from .equation import *
-from .ref import *
-from .text_general import *
-from .title_presentation import *
-from .title_section import *
-from .underbar import *
-
-__all__ = []
-__all__ += title_section.__all__
-__all__ += title_presentation.__all__
-__all__ += blb.__all__
-__all__ += ref.__all__
-__all__ += text_general.__all__
-__all__ += equation.__all__
-__all__ += underbar.__all__
+from .text_general import Text_General
+from .title_presentation import Title_Presentation
+from .title_section import Title_Section
+from .blb import BlB
+from .equation import Equation
+from .ref import Reference
+from .underbar import Underbar
+__all__ = ['Text_General', 'Title_Presentation', 'Title_Section', 'BlB', 'Equation', 'Reference', 'Underbar']
